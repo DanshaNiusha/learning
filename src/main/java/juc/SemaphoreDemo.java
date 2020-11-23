@@ -1,7 +1,6 @@
-package com.dansha;
+package juc;
 
 import java.util.concurrent.Semaphore;
-import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * @author liuxiaokang

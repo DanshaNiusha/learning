@@ -1,4 +1,4 @@
-package juc.sgg.queue;
+package juc.sgg.blocking_queue;
 
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;

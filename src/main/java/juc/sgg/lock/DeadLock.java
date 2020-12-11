@@ -21,7 +21,7 @@ class HoldLockThread implements Runnable {
     public void run() {
         synchronized (lockA){
             System.out.println(Thread.currentThread().getName()+"\t自己持有:"+lockA+"\t尝试获得:"+lockB);
-            Thread.sleep(1000);
+            Thread.sleep(1000);// 防止第二个线程还没启动第一个线程就执行完了
             synchronized (lockB){
                 System.out.println(Thread.currentThread().getName()+"\t自己持有:"+lockB+"\t尝试获得:"+lockA);
             }

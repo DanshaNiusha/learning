@@ -1,7 +1,7 @@
 package datastructures.stack;
 
 /**
- * 单链表实现栈 头插法 然后正向遍历 或者尾插法反向遍历
+ * 单链表实现栈 头插法 然后正向遍历
  *
  * @author Dansha
  * @version 1.0

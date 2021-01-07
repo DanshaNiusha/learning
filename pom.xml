@@ -19,5 +19,10 @@
             <artifactId>lombok</artifactId>
             <version>1.16.10</version>
         </dependency>
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.52</version>
+        </dependency>
     </dependencies>
 </project>

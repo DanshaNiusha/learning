@@ -26,15 +26,22 @@ public class BinaryTreeDemo {
         
         System.out.println("前序");
         tree.preOrder();
-        // System.out.println("中序");
-        // tree.infixOrder();
-        // System.out.println("后序");
-        // tree.postOrder();
+        System.out.println("中序");
+        tree.infixOrder();
+        System.out.println("后序");
+        tree.postOrder();
         
-        System.out.println(tree.preOrderSearch(2));
-        System.out.println(tree.postOrderSearch(2));
-        System.out.println(tree.infixOrderSearch(2));
+        // 遍历
+        // System.out.println(tree.preOrderSearch(2));
+        // System.out.println(tree.postOrderSearch(2));
+        // System.out.println(tree.infixOrderSearch(2));
     
+        // 删除节点
+        System.out.println("删除前,前序遍历");
+        tree.preOrder(); //  1,2,3,5,4
+        tree.delNode(2);
+        System.out.println("删除后，前序遍历");
+        tree.preOrder(); // 1,2,3,4
     
     }
 
@@ -86,6 +93,9 @@ class BinaryTree{
         return root.postOrderSearch(no);
     }
     
+    public void delNode(int no) {
+        root.delNode(no);
+    }
     
 }
 
@@ -235,8 +245,40 @@ class HeroNode{
         return result;
     }
     
+    /**
+     * 递归删除结点
+     * 1.如果删除的节点是叶子节点，则删除该节点
+     * 2.如果删除的节点是非叶子节点，则删除该子树
+     */
+    public void delNode(int no) {
+		/*
+		 思路: **因为我们的二叉树是单向的，所以我们是判断当前结点的子结点是否需要删除结点，而不能去判断当前这个结点是不是需要删除结点.**
+			2. 如果当前结点的左子结点不为空，并且左子结点 就是要删除结点，就将this.left = null; 并且就返回(结束递归删除)
+			3. 如果当前结点的右子结点不为空，并且右子结点 就是要删除结点，就将this.right= null ;并且就返回(结束递归删除)
+			4. 如果第2和第3步没有删除结点，那么我们就需要向左子树进行递归删除
+			5. 如果第4步也没有删除结点，则应当向右子树进行递归删除.
+		 */
+        //1
+        if (this.left != null && this.left.no == no) {
+            this.left = null;
+            return;
+        }
+        //2
+        if (this.right != null && this.right.no == no) {
+            this.right = null;
+            return;
+        }
+        //3 递归
+        if (this.left != null) {
+            this.left.delNode(no);
+        }
+        //4
+        if (this.right != null) {
+            this.right.delNode(no);
+        }
     
     
+    }
     
     
     @Override

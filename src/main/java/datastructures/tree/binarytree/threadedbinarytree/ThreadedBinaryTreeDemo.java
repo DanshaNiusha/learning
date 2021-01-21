@@ -1,4 +1,4 @@
-package datastructures.tree.threadedbinarytree;
+package datastructures.tree.binarytree.threadedbinarytree;
 
 /**
  * 线索二叉树, 在空节点上全都补上前驱和后继节点

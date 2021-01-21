@@ -12,6 +12,7 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.stream.Stream;
 
 public class HuffmanCode {
 	
@@ -391,6 +392,7 @@ public class HuffmanCode {
 		
 		//遍历 bytes , 统计 每一个byte出现的次数->map[key,value]
 		Map<Byte, Integer> counts = new HashMap<>();
+		// Arrays.stream(bytes).forEach(b->counts.merge(b, 1, Integer::sum));
 		for (byte b : bytes) {
 			Integer count = counts.get(b);
 			if (count == null) { // Map还没有这个字符数据,第一次
@@ -445,7 +447,7 @@ public class HuffmanCode {
 class Node implements Comparable<Node>  {
 	Byte data; // 存放数据(字符)本身，比如'a' => 97 ' ' => 32
 	int weight; //权值, 表示字符出现的次数
-	Node left;//
+	Node left;
 	Node right;
 	public Node(Byte data, int weight) {
 		

@@ -1,4 +1,4 @@
-package datastructures.tree;
+package datastructures.tree.binarytree;
 
 /**
  * 数组和二叉树的相互转换 层序遍历

@@ -1,10 +1,9 @@
-package datastructures.huffmantree;
+package datastructures.huffman.huffmantree;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
-import java.util.stream.Stream;
+import java.util.stream.Collectors;
 
 /**
  * 霍夫曼树
@@ -26,10 +25,8 @@ public class HuffmanTree {
         // 1. 遍历 arr 数组
         // 2. 将arr的每个元素构成成一个Node
         // 3. 将Node 放入到ArrayList中
-        List<Node> nodes = new ArrayList<>();
-        Arrays.stream(arr).forEach(value -> nodes.add(new Node(value)));
+        List<Node> nodes = Arrays.stream(arr).mapToObj(Node::new).collect(Collectors.toList());
         //我们处理的过程是一个循环的过程
-        
         while (nodes.size() > 1) {
             Collections.sort(nodes);
             // 取最小

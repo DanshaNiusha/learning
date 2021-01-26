@@ -1,10 +1,16 @@
 package datastructures.tree.avl;
 
 
+import java.math.BigDecimal;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Deque;
+import java.util.LinkedList;
+import java.util.List;
 
 /**
  * 平衡二叉树(AVL树/BBT树)
+ * avl树就也是bst树, 就是通过左旋右旋来防止bst形成一串(12345)导致查找效率低
  *
  * @author liuxiaokang
  * @date 2021/1/21
@@ -24,8 +30,8 @@ public class AVLTreeDemo {
         System.out.println("树的右子树高度=" + avlTree.getRoot().rightHeight());
         System.out.println("当前的根结点=" + avlTree.getRoot());
         
-        
     }
+    
     
     
 }
@@ -198,7 +204,7 @@ class Node {
          */
         //当添加完一个结点后，如果: (右子树的高度-左子树的高度) > 1 , 左旋转
         if(rightHeight() - leftHeight() > 1) {
-            //如果它的右子树的左子树的高度大于它的右子树的右子树的高度
+            //如果它的右子树的左子树的高度大于它的右子树的右子树的高度 这样如果直接旋转后得到的还是原来的树高, 并没有变成avl 画图
             if(right != null && right.leftHeight() > right.rightHeight()) {
                 //先对右子结点进行右旋转
                 right.rightRotate();
@@ -285,7 +291,6 @@ class Node {
     public int getHeight() {
         return Math.max(left == null ? 0 : left.getHeight(), right == null ? 0 : right.getHeight()) + 1;
     }
-    
     
     /**
      * 查找要删除的结点

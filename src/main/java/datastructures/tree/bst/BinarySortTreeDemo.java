@@ -2,7 +2,7 @@ package datastructures.tree.bst;
 
 
 /**
- * BST 二叉排序(查找)树
+ * BST 二叉排序(搜索)树
  *
  * @author liuxiaokang
  * @date 2021/1/18

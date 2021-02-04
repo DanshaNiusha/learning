@@ -9,7 +9,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 /**
- * 平衡二叉树(AVL树/BBT树)
+ * 平衡二叉树搜索树(AVL树/BBT树)
  * avl树就也是bst树, 就是通过左旋右旋来防止bst形成一串(12345)导致查找效率低
  *
  * @author liuxiaokang

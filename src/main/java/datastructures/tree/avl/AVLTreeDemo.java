@@ -1,12 +1,7 @@
 package datastructures.tree.avl;
 
 
-import java.math.BigDecimal;
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Deque;
-import java.util.LinkedList;
-import java.util.List;
 
 /**
  * 平衡二叉树搜索树(AVL树/BBT树)

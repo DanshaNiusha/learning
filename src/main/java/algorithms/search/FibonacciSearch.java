@@ -1,4 +1,4 @@
-package atguigu.dataStructures.search;
+package algorithms.search;
 
 import java.util.Arrays;
 

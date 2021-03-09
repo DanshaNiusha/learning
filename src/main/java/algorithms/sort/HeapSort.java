@@ -1,4 +1,4 @@
-package datastructures.tree;
+package algorithms.sort;
 
 import java.text.SimpleDateFormat;
 import java.util.Arrays;

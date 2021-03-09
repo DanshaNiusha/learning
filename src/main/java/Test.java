@@ -1,6 +1,4 @@
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Stack;
+import java.util.Scanner;
 
 /**
  * @author liuxiaokang
@@ -8,28 +6,22 @@ import java.util.Stack;
  */
 public class Test {
     
-    public List<Integer> inorderTraversal(TreeNode root) {
-        List<Integer> list = new ArrayList<>();
-        Stack<TreeNode> stack = new Stack<>();
-    
-        TreeNode cur = root;
-        while (cur != null || !stack.isEmpty()) {
-            if (cur != null) {
-                // 一直指向左节点
-                stack.push(cur);
-                cur = cur.left;
-            } else {
-                // 直到左节点空了
-                cur = stack.pop(); // 栈中放的是历史遍历下来的节点
-                list.add(cur.val); // 加进去
-                cur = cur.right; // 指向right再继续看右边有没有值
-            }
-        }
-    
-        return list;
+    public static void main(String[] args) {
+        //写一个简单的菜单
+        Scanner scanner = new Scanner(System.in);
+        String s = scanner.next();
+        int id = scanner.nextInt();
+        int id1 = scanner.nextInt();
+        System.out.println(s);
+        System.out.println(id);
+        System.out.println(id1);
+        String name = scanner.next();
+        
+        
     }
     
 }
+    
 
 class ListNode {
     int val;

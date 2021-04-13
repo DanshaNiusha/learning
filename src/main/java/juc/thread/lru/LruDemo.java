@@ -1,7 +1,6 @@
-package juc.sgg.lru;
+package juc.thread.lru;
 
 import java.util.HashMap;
-import java.util.LinkedList;
 import java.util.Map;
 
 /**

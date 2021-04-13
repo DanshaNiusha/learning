@@ -1,4 +1,4 @@
-package guava;
+package jdk.guava;
 
 import com.google.common.collect.ImmutableMap;
 import com.google.common.collect.Lists;

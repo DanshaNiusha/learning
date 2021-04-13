@@ -1,4 +1,4 @@
-package juc.jvm;
+package juc.gc;
 
 import java.lang.ref.PhantomReference;
 import java.lang.ref.ReferenceQueue;

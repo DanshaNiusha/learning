@@ -1,4 +1,4 @@
-package juc.sgg.lock;
+package juc.thread.lock;
 
 /**
  * @description sendSMS调sendEmail不阻塞 代表可重入, 外层获取锁之后再获取内存的锁时是直接可以获取的

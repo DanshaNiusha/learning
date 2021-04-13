@@ -1,6 +1,4 @@
-package juc.sgg.test;
-
-import java.util.Random;
+package juc.thread.test;
 
 public class Test {
     public static void main(String[] args) {

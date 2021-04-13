@@ -1,4 +1,4 @@
-package juc.sgg.string;
+package juc.thread.string;
 
 /**
  * @author liuxiaokang

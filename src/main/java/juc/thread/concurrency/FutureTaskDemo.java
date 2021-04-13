@@ -1,4 +1,4 @@
-package juc.dansha;
+package juc.thread.concurrency;
 
 import javax.sound.midi.Soundbank;
 import java.util.concurrent.Callable;

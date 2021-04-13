@@ -1,6 +1,4 @@
-package juc.jvm;
-
-import java.util.HashMap;
+package juc.gc;
 
 /**
  * @author liuxiaokang

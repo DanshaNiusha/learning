@@ -1,4 +1,4 @@
-package juc.sgg.lock;
+package juc.thread.lock;
 
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicReference;

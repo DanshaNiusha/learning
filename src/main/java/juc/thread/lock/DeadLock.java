@@ -1,4 +1,4 @@
-package juc.sgg.lock;
+package juc.thread.lock;
 
 import lombok.SneakyThrows;
 

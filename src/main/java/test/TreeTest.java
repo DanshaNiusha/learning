@@ -27,16 +27,16 @@ public class TreeTest {
     }
     
     public static void main(String[] args) {
-        Father person = new Father();
-        person.name = "ren";
-        person.sex = "1";
-        Child father = new Child();
-        father.name = "child";
-        father.genfer= "das";
-        father.sex  ="2";
+        Father father = new Father();
+        father.name = "ren";
+        father.sex = "1";
+        Child child = new Child();
+        child.name = "child";
+        child.genfer= "das";
+        child.sex  ="2";
     
-        Child child = (Child) person;
-        System.out.println(child);
+        Father f = child;
+        System.out.println(f);
         Father fa = child;
         System.out.println(fa);
     

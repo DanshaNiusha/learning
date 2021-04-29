@@ -29,7 +29,8 @@ public class TreeTest {
     public static void main(String[] args) {
         Father father = new Father();
         father.name = "ren";
-        father.sex = "1";
+        father.sex = "1e231";
+        // csadsa
         Child child = new Child();
         child.name = "child";
         child.genfer= "das";

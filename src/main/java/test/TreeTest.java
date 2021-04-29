@@ -34,77 +34,8 @@ public class TreeTest {
     }
     
     public static void main(String[] args) {
-        Father father = new Father();
-        father.name = "ren";
-        father.sex = "1e231";
-        // csadsa
-        Child child = new Child();
-        child.name = "child";
-        child.genfer= "das";
-        child.sex  ="2";
-        // Father father = new Father();
-        // father.name = "ren";
-        // father.sex = "1";
-        //
-        // ArrayList<String> list = Lists.newArrayList("1", "2");
-        // ArrayList<String> list1 = deepClone(list);
-        // list.remove("1");
-        // System.out.println(list1);
-        // System.out.println((3&1));
-        // System.out.println((3&2));
-        // System.out.println((3&3));
-        // System.out.println((3&4));
-        // System.out.println((3&5));
-        // System.out.println((3&6));
-        // System.out.println((3&7));
-        
-        
-        System.out.println(2|0|0|0);
-        System.out.println(2|1);
-        // Child child = new Child();
-        // child.name = "child";
-        // child.genfer= "das";
-        // child.sex  ="2";
-        //
-        // Father f = child;
-        // System.out.println(f);
-        // Father fa = child;
-        // System.out.println(fa);
-        // System.out.println(15|5);
     
     }
-        // Father father = new Father();
-        // father.name = "ren";
-        // father.sex = "1";
-        //
-        // ArrayList<String> list = Lists.newArrayList("1", "2");
-        // ArrayList<String> list1 = deepClone(list);
-        // list.remove("1");
-        // System.out.println(list1);
-        // System.out.println((3&1));
-        // System.out.println((3&2));
-        // System.out.println((3&3));
-        // System.out.println((3&4));
-        // System.out.println((3&5));
-        // System.out.println((3&6));
-        // System.out.println((3&7));
-        
-        
-        System.out.println(2|0|0|0);
-        System.out.println(2|1);
-        // Child child = new Child();
-        // child.name = "child";
-        // child.genfer= "das";
-        // child.sex  ="2";
-        //
-        // Father f = child;
-        // System.out.println(f);
-        // Father fa = child;
-        // System.out.println(fa);
-        // System.out.println(15|5);
-    
-    }
-    
     
     /**
      * 深拷贝工具

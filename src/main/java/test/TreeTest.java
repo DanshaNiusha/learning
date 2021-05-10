@@ -111,14 +111,14 @@ public class TreeTest {
      * @author liuxiaokang
      * @date 2021/4/25
      */
-    public static <T> T deepClone(T source) {
+    public static <S> S deepClone(S source) {
         try {
             ByteArrayOutputStream baos = new ByteArrayOutputStream();
             ObjectOutputStream oos = new ObjectOutputStream(baos);
             oos.writeObject(source);
             ByteArrayInputStream bis = new ByteArrayInputStream(baos.toByteArray());
             ObjectInputStream ois = new ObjectInputStream(bis);
-            return (T) ois.readObject();
+            return (S) ois.readObject();
         } catch (Exception e) {
             return null;
         }

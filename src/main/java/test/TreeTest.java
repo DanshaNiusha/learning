@@ -49,7 +49,7 @@ public class TreeTest {
             oos.writeObject(source);
             ByteArrayInputStream bis = new ByteArrayInputStream(baos.toByteArray());
             ObjectInputStream ois = new ObjectInputStream(bis);
-            return (S) ois.readObject();
+            return (S) ois.readObject() ;
         } catch (Exception e) {
             return null;
         }

@@ -1,4 +1,4 @@
-package juc.sgg.conditionThread;
+package juc.thread.conditionThread;
 
 import lombok.Getter;
 

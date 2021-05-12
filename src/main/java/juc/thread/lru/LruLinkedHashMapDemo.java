@@ -1,4 +1,4 @@
-package juc.sgg.lru;
+package juc.thread.lru;
 
 import java.util.LinkedHashMap;
 import java.util.Map;

@@ -1,4 +1,4 @@
-package juc.sgg.cas;
+package juc.thread.cas;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

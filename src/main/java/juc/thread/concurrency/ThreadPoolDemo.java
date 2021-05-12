@@ -1,4 +1,4 @@
-package juc.dansha;
+package juc.thread.concurrency;
 
 import java.util.ArrayList;
 import java.util.Collections;

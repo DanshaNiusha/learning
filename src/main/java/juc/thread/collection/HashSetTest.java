@@ -1,4 +1,4 @@
-package juc.sgg.collection;
+package juc.thread.collection;
 
 import java.util.Collections;
 import java.util.HashSet;

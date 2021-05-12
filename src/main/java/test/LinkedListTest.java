@@ -1,5 +1,4 @@
-import java.util.LinkedList;
-import java.util.List;
+package test;
 
 /**
  * @author liuxiaokang
@@ -61,7 +60,7 @@ class ListNode {
     
     @Override
     public String toString() {
-        return "ListNode{" +
+        return "test.ListNode{" +
                 "val=" + val +
                 '}';
     }

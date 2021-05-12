@@ -1,4 +1,4 @@
-package juc.jvm;
+package juc.gc;
 
 import java.lang.ref.SoftReference;
 

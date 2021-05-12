@@ -1,7 +1,6 @@
-package juc.jvm;
+package juc.gc;
 
 import java.nio.ByteBuffer;
-import java.util.ArrayList;
 
 /**
  * @author liuxiaokang

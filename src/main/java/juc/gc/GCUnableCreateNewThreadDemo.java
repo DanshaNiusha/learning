@@ -1,6 +1,4 @@
-package juc.jvm;
-
-import java.nio.ByteBuffer;
+package juc.gc;
 
 /**
  * @author liuxiaokang

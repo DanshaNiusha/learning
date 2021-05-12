@@ -1,4 +1,4 @@
-package juc.sgg.volatileTest;
+package juc.thread.volatileTest;
 
 public class SingletonDemo {
     private static volatile SingletonDemo instance = null;

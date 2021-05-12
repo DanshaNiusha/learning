@@ -1,7 +1,6 @@
-package juc.jvm;
+package juc.gc;
 
 import java.util.ArrayList;
-import java.util.List;
 
 /**
  * @author liuxiaokang

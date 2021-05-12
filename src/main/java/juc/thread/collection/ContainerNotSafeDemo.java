@@ -1,4 +1,4 @@
-package juc.sgg.collection;
+package juc.thread.collection;
 
 import java.util.ArrayList;
 import java.util.Collections;

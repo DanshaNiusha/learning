@@ -1,4 +1,4 @@
-package juc.jvm;
+package juc.gc;
 
 /**
  * @author liuxiaokang

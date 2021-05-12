@@ -1,7 +1,8 @@
-package guava;
+package jdk.guava;
 
 import com.google.common.collect.ImmutableMap;
 import com.google.common.collect.Lists;
+import com.google.common.collect.Maps;
 
 import java.util.ArrayList;
 
@@ -13,7 +14,6 @@ public class GuavaTest {
     public static void main(String[] args) {
         ArrayList<Object> objects = Lists.newArrayList();
         ImmutableMap<String, String> map = ImmutableMap.of("a", "liuxiaokang", "n", "sndia");
-    
     
     }
     

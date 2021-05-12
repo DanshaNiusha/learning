@@ -1,10 +1,7 @@
-package juc.sgg.lock;
+package juc.thread.lock;
 
 import java.util.concurrent.TimeUnit;
-import java.util.concurrent.locks.Condition;
-import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.LockSupport;
-import java.util.concurrent.locks.ReentrantLock;
 
 /**
  * @author liuxiaokang

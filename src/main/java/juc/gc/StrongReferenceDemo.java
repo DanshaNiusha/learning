@@ -1,4 +1,4 @@
-package juc.jvm;
+package juc.gc;
 
 public class StrongReferenceDemo {
     public static void main(String[] args) {

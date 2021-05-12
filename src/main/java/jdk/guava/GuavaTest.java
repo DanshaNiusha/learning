@@ -12,7 +12,7 @@ import java.util.ArrayList;
  */
 public class GuavaTest {
     public static void main(String[] args) {
-        ArrayList<Object> objects = Lists.newArrayList();
+        ArrayList<Object> objects123 = Lists.newArrayList();
         ImmutableMap<String, String> map = ImmutableMap.of("a", "liuxiaokang", "n", "sndia");
     
     }

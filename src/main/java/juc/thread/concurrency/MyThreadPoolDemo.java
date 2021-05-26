@@ -1,4 +1,4 @@
-package juc.thread.thread;
+package juc.thread.concurrency;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;

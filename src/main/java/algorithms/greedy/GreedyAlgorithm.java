@@ -1,6 +1,5 @@
 package algorithms.greedy;
 
-import com.sun.org.glassfish.external.amx.AMX;
 
 import java.util.ArrayList;
 import java.util.HashMap;

@@ -1,14 +1,24 @@
 package juc.thread.test;
 
+
+import com.alibaba.fastjson.JSONObject;
+import com.google.common.base.Joiner;
+import com.google.common.collect.Lists;
+import juc.thread.concurrency.BizPlatformException;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Optional;
+import java.util.stream.Collectors;
+
 public class Test {
     public static void main(String[] args) {
-        Runtime runtime = Runtime.getRuntime();
-        System.out.println(runtime.availableProcessors());//线程数
-        System.out.println(runtime.totalMemory() / (double) 1024);//初始内存-Xms
-        System.out.println(runtime.maxMemory() / (double) 1024);//最大内存-Xmx
-        //         String str = "jian8";
-        //         while (true){
-        //             str += str+new Random().nextInt(88888888)+new Random().nextInt(88888888);
-        //         }
+        List<Long> goodsIds = Lists.newLinkedList();
+        System.out.println(goodsIds.get(goodsIds.size() - 1));
+    }
+    
+    public static void xx(String str){
+        str = "22";
     }
 }

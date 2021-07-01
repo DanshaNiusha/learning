@@ -14,7 +14,16 @@ import java.util.stream.Collectors;
 
 public class Test {
     public static void main(String[] args) {
-        List<Long> goodsIds = Lists.newLinkedList();
+        List<Long> goodsIds = Lists.newArrayList();
+        goodsIds.add(1L);
+        for (int i = 0; i < 10; i++) {
+            // new Thread(()->{
+                ArrayList<Long> list1 = Lists.newArrayList();
+                list1.add(2L);
+                goodsIds.addAll(null);
+            // }).start();
+        }
+        
         System.out.println(goodsIds.get(goodsIds.size() - 1));
     }
     

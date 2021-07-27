@@ -16,7 +16,7 @@ import java.util.Map;
 public class CommonUtils {
     
     /**
-     * map分批
+     * map分批s
      * @param size 每批次大小
      * @author liuxiaokang
      * @date 2021/7/23

@@ -5,7 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e11cfef8-d2e1-4298-92de-76e5c2d4ff4a" name="Default Changelist" comment="dsa">
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/CommonUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/CommonUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jdk/guava/RangeSetTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jdk/stream/partitionByTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jdk/stream/partitionMapTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/utils/ThreadPoolUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/juc/thread/test/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/MainTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MainTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jdk/guava/LimiterTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jdk/guava/LimiterTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/juc/thread/test/Test.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,17 +50,33 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
-  <component name="RunManager" selected="Gradle./Users/liuxiaokang03/LearningProjects/learning">
-    <configuration name="CommonUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="utils.CommonUtils" />
+  <component name="ReaderModeSettings">
+    <option name="showRenderedDocs" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="jdk.stream" />
+      <recent name="utils" />
+      <recent name="jdk.guava" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.MainTest">
+    <configuration name="MainTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MainTest" />
       <module name="learning" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LimiterTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="jdk.guava.LimiterTest" />
+    <configuration name="RangeSetTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="jdk.guava.RangeSetTest" />
       <module name="learning" />
       <extension name="coverage">
         <pattern>
@@ -64,9 +88,41 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MainTest" />
+    <configuration name="ThreadPoolUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="utils.ThreadPoolUtils" />
       <module name="learning" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="partitionByTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="jdk.stream.partitionByTest" />
+      <module name="learning" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="jdk.stream.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="partitionMapTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="jdk.stream.partitionMapTest" />
+      <module name="learning" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="jdk.stream.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -82,25 +138,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="/Users/liuxiaokang03/LearningProjects/learning" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list />
-        </option>
-        <option name="vmOptions" value="" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <method v="2">
         <option name="Make" enabled="true" />
@@ -114,10 +151,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle./Users/liuxiaokang03/LearningProjects/learning" />
-        <item itemvalue="Application.LimiterTest" />
-        <item itemvalue="Application.CommonUtils" />
         <item itemvalue="Application.MainTest" />
+        <item itemvalue="Application.partitionMapTest" />
+        <item itemvalue="Application.partitionByTest" />
+        <item itemvalue="Application.ThreadPoolUtils" />
+        <item itemvalue="Application.RangeSetTest" />
       </list>
     </recent_temporary>
   </component>
@@ -140,7 +178,13 @@
       <workItem from="1626334974820" duration="787000" />
       <workItem from="1627028874328" duration="1169000" />
       <workItem from="1627266804520" duration="113000" />
-      <workItem from="1627356407389" duration="2342000" />
+      <workItem from="1627356407389" duration="2443000" />
+      <workItem from="1627369102290" duration="1186000" />
+      <workItem from="1627464889721" duration="1414000" />
+      <workItem from="1627539659936" duration="2707000" />
+      <workItem from="1627905807186" duration="1641000" />
+      <workItem from="1627960562688" duration="1500000" />
+      <workItem from="1628077523874" duration="2385000" />
     </task>
     <task id="LOCAL-00001" summary="dsa">
       <created>1627367050746</created>
@@ -176,7 +220,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/MainTest.java</url>
-          <line>32</line>
+          <line>34</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>

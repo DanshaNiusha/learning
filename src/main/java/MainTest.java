@@ -5,6 +5,8 @@ import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.tuple.Pair;
 
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -31,16 +33,43 @@ public class MainTest {
         //     Map<String, Object> row = table.row(rowkey);
         // }
         // System.out.println(table);
+        //
+        // HashMap<Object, Object> map = Maps.newHashMap();
+        // map.put("1","a");
+        // map.put("2","b");
+        // map.entrySet().forEach(a->a.setValue("xxx"));
+        //
+        // ArrayList<Object> list = Lists.newArrayList(1,2,3);
+        // list.forEach(l->list.remove(l));
+        // System.out.println(list);
+        //
+        // List<Integer> objects = Collections.emptyList();
+        // objects.add(1);
     
-        HashMap<Object, Object> map = Maps.newHashMap();
-        map.put("1","a");
-        map.put("2","b");
-        map.entrySet().forEach(a->a.setValue("xxx"));
-    
-        ArrayList<Object> list = Lists.newArrayList(1,2,3);
-        list.forEach(l->list.remove(l));
-        System.out.println(list);
-    
+        List<Integer> list = Lists.newArrayList();
+        list.add(null);
+        list.add(1);
+        list.add(null);
+        list.add(null);
+        list.add(2);
+        list.add(null);
+        // list.add(1);
+        list.sort((o1, o2) -> {
+            if (o1 == null) {
+                return 1;
+            }
+            if (o2 == null) {
+                return -1;
+            }
+            return o2 - o1;
+            
+            // if (o1 != null && o2 != null) {
+            //     return o1.compareTo(o2);
+            // } else {
+            //     return o1 == null ? 1 : -1;
+            // }
+        });
+        System.out.println(list.toString());
     }
     
 }

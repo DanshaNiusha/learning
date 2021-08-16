@@ -46,30 +46,33 @@ public class MainTest {
         // List<Integer> objects = Collections.emptyList();
         // objects.add(1);
     
-        List<Integer> list = Lists.newArrayList();
-        list.add(null);
-        list.add(1);
-        list.add(null);
-        list.add(null);
-        list.add(2);
-        list.add(null);
+        // List<Integer> list = Lists.newArrayList();
+        // list.add(null);
         // list.add(1);
-        list.sort((o1, o2) -> {
-            if (o1 == null) {
-                return 1;
-            }
-            if (o2 == null) {
-                return -1;
-            }
-            return o2 - o1;
-            
-            // if (o1 != null && o2 != null) {
-            //     return o1.compareTo(o2);
-            // } else {
-            //     return o1 == null ? 1 : -1;
-            // }
-        });
-        System.out.println(list.toString());
+        // list.add(null);
+        // list.add(null);
+        // list.add(2);
+        // list.add(null);
+        // // list.add(1);
+        // list.sort((o1, o2) -> {
+        //     if (o1 == null) {
+        //         return 1;
+        //     }
+        //     if (o2 == null) {
+        //         return -1;
+        //     }
+        //     return o2 - o1;
+        //
+        //     // if (o1 != null && o2 != null) {
+        //     //     return o1.compareTo(o2);
+        //     // } else {
+        //     //     return o1 == null ? 1 : -1;
+        //     // }
+        // });
+        // System.out.println(list.toString());
+    
+        System.out.println(448&128);
+        
     }
     
 }

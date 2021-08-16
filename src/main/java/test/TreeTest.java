@@ -1,6 +1,8 @@
 package test;
 
 import com.google.common.collect.Lists;
+import com.google.common.collect.Sets;
+import lombok.AllArgsConstructor;
 import lombok.ToString;
 
 import java.io.ByteArrayInputStream;
@@ -8,6 +10,7 @@ import java.io.ByteArrayOutputStream;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.util.ArrayList;
+import java.util.HashSet;
 
 /**
  * @author liuxiaokang
@@ -34,7 +37,19 @@ public class TreeTest {
     }
     
     public static void main(String[] args) {
+        Father aa = new Father("1", "aa");
+        Father b = deepClone(aa);
+        b.name="xx";
+        
+        
+        // HashSet<Father> set = Sets.newHashSet(aa);
+        // HashSet<Father> set2 = Sets.newHashSet();
+        // set2 = set;
+        // for (Father father : set2) {
+        //     father.name="2";
+        // }
     
+        System.out.println(aa);
     }
     
     /**
@@ -57,13 +72,10 @@ public class TreeTest {
     
     
     @ToString
+    @AllArgsConstructor
     static class Father {
         public String name;
         public String sex;
         
-    }
-    @ToString
-    static class Child extends Father {
-        public String genfer;
     }
 }

@@ -1,4 +1,4 @@
-package juc.thread.conditionThread;
+package juc.thread.concurrency;
 
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.TimeUnit;

@@ -1,4 +1,4 @@
-package juc.thread.blocking_queue;
+package juc.thread.blockingqueue;
 
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;

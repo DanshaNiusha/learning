@@ -1,4 +1,4 @@
-package juc.thread.conditionThread;
+package juc.thread.concurrency;
 
 import lombok.Getter;
 

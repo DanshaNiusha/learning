@@ -1,4 +1,4 @@
-package juc.thread.volatileTest;
+package juc.thread.volatiletest;
 
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicInteger;

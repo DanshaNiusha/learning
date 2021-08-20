@@ -1,13 +1,7 @@
 package utils;
 
 
-import java.util.concurrent.ArrayBlockingQueue;
-import java.util.concurrent.Callable;
-import java.util.concurrent.Exchanger;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Future;
-import java.util.concurrent.ThreadPoolExecutor;
-import java.util.concurrent.TimeUnit;
+import java.util.concurrent.*;
 
 public class ThreadPoolUtils {
     
@@ -15,10 +9,10 @@ public class ThreadPoolUtils {
         throw new IllegalAccessError("Utility class");
     }
     
-    /**
-     * 核心业务
-     */
-    private static final ExecutorService threadCorePool = new ThreadPoolExecutor(2, 10, 1, TimeUnit.SECONDS, new ArrayBlockingQueue<>(100),
+    private static final ExecutorService commonPool = new ThreadPoolExecutor(1, 1, 1, TimeUnit.SECONDS, new LinkedBlockingQueue<>(1),
+                    new ThreadPoolExecutor.CallerRunsPolicy());
+    
+    private static final ExecutorService syncPool = new ThreadPoolExecutor(1, 1, 1, TimeUnit.SECONDS, new SynchronousQueue<>(),
                     new ThreadPoolExecutor.CallerRunsPolicy());
     
     /**
@@ -27,21 +21,22 @@ public class ThreadPoolUtils {
      * @param callable 任务.
      */
     public static <T> Future<T> submit(Callable<T> callable) {
-        return threadCorePool.submit(callable);
+        return commonPool.submit(callable);
     }
     
-    /**
-     * 公用线程池。可用于消息发送等次要服务
-     *
-     * @param runnable 线程
-     */
     public static void excute(Runnable runnable) {
-        threadCorePool.execute(runnable);
+        commonPool.execute(runnable);
     }
     
-    public static void main(String[] args) {
+    public static void excute(Runnable runnable, ExecutorService pool) {
+        commonPool.execute(runnable);
+    }
     
+    public static ExecutorService getCommonPool() {
+        return commonPool;
+    }
     
-       
+    public static ExecutorService getSyncPool() {
+        return syncPool;
     }
 }

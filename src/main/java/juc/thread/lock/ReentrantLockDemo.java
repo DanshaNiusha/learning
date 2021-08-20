@@ -2,6 +2,7 @@ package juc.thread.lock;
 
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
+import java.util.concurrent.locks.ReentrantReadWriteLock;
 
 public class ReentrantLockDemo {
     public static void main(String[] args) {
@@ -12,7 +13,7 @@ public class ReentrantLockDemo {
 }
 
 class Mobile implements Runnable{
-    Lock lock = new ReentrantLock();
+    ReentrantLock lock = new ReentrantLock();
     @Override
     public void run() {
         get();

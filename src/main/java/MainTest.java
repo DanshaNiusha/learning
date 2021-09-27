@@ -7,6 +7,7 @@ import org.apache.commons.lang3.time.StopWatch;
 import org.apache.commons.lang3.tuple.Pair;
 import utils.ThreadPoolUtils;
 
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
@@ -15,6 +16,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 import java.util.concurrent.CountDownLatch;
+import java.util.concurrent.ExecutorService;
+import java.util.stream.Collectors;
 
 /**
  * @author liuxiaokang
@@ -23,102 +26,56 @@ import java.util.concurrent.CountDownLatch;
 public class MainTest {
     
     public static void main(String[] args) throws InterruptedException {
-        Object s = "123";
-        String ret = Optional.ofNullable(s).map(Object::toString).orElse("");
-    
-        // Object i1=2;
-        // long i11 = Long.parseLong( i1.toString());
-        // // int i11 = (int) i1;
-        // System.out.println(i11);
-        // // set1(i11);
-    
-        // StopWatch stopWatch = new StopWatch();
-        // stopWatch.start();
-        // CountDownLatch latch = new CountDownLatch(1000);
-        // for (int i = 0; i < 1000; i++) {
-        //     ThreadPoolUtils.excute(() -> {
-        //         System.out.println("执行了");
-        //         try { Thread.sleep(10);} catch (InterruptedException e) {  e.printStackTrace();}
-        //         latch.countDown();
-        //     },ThreadPoolUtils.getSyncPool());
-        // }
-        // latch.await();
-        // stopWatch.stop();
-        // System.out.println(stopWatch);
+        // List<model.Mode3> emptyList = Lists.newArrayList();
+        // emptyList.add(new model.Mode3());
+        // Optional.ofNullable(new model.Mode3()).map(x->{
+        //     System.out.println(x.name);
+        //     return x.name;
+        // }).orElse(null);
+        // Map<String, String> collect = emptyList.stream().filter(x->x.getSex()!=null).collect(Collectors.toMap(model.Mode3::getName, model.Mode3::getSex));
+        // System.out.println(11);
         //
-        
-        
-        // String s = "1234";
-        // String remove = StringUtils.remove(s, "13");
-        // System.out.println(s);
-        // System.out.println(remove);
-    
-    
-        // HashBasedTable<Integer, String, Object> table = HashBasedTable.create();
-        // table.put(11,"aa",true);
-        // table.put(2,"bb",false);
-        // table.put(3,"cc",true);
-        //
-        // for (Integer rowkey : table.rowKeySet()) {
-        //     Map<String, Object> row = table.row(rowkey);
-        // }
-        // System.out.println(table);
-        //
-        // HashMap<Object, Object> map = Maps.newHashMap();
-        // map.put("1","a");
-        // map.put("2","b");
-        // map.entrySet().forEach(a->a.setValue("xxx"));
-        //
-        // ArrayList<Object> list = Lists.newArrayList(1,2,3);
-        // list.forEach(l->list.remove(l));
-        // System.out.println(list);
-        //
-        // List<Integer> objects = Collections.emptyList();
-        // objects.add(1);
     
         // List<Integer> list = Lists.newArrayList();
         // list.add(1);
         // list.add(2);
         // list.add(3);
-        // // for (Integer i : list) {
-        // //     list.add(1);
-        // // }
-        // // list.forEach(x->list.add(1));
-        // for (int i = 0; i < list.size(); i++) {
-        //     Integer integer = list.get(i);
-        //     integer = 34;
+        // try {
+        //     for (int i = 0; i < 10; i++) {
+        //         ThreadPoolUtils.getSyncPool().execute(()->{
+        //             System.out.println(Thread.currentThread().getName());
+        //             try {
+        //                 Thread.sleep(100);
+        //             } catch (InterruptedException e) {
+        //                 e.printStackTrace();
+        //             }
+        //         });
+        //     }
+        //     System.out.println("end");
+        // }catch (Exception e){
+        //     System.out.println("eeeeeee");
         // }
-        // System.out.println(list.toString());
-        
-        // // list.add(1);
-        // list.sort((o1, o2) -> {
-        //     if (o1 == null) {
-        //         return 1;
-        //     }
-        //     if (o2 == null) {
-        //         return -1;
-        //     }
-        //     return o2 - o1;
-        //
-        //     // if (o1 != null && o2 != null) {
-        //     //     return o1.compareTo(o2);
-        //     // } else {
-        //     //     return o1 == null ? 1 : -1;
-        //     // }
-        // });
-        // System.out.println(list.toString());
     
-        // // Optional<String> ss = Optional.of("ss");
-        // Optional<String> ss = Optional.empty();
-        // String s = ss.map(x -> x).orElse("1");
-        // System.out.println(s);
-        //
-        // System.out.println(448&128);
-        
+        new ThreadTester("T1").start();
+        new ThreadTester("T2").start();
+        System.out.println("结束------------");
+    
     }
     
     private static void set1(int l){
     
     }
     
+}
+
+class ThreadTester extends Thread{
+    public ThreadTester(String name) {
+        super(name);
+    }
+    
+    @Override
+    public void run(){
+        System.out.println(this.getName()+"start");
+        System.out.println(this.getName()+"end");
+    }
 }

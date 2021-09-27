@@ -12,7 +12,8 @@ public class ThreadPoolUtils {
     private static final ExecutorService commonPool = new ThreadPoolExecutor(1, 1, 1, TimeUnit.SECONDS, new LinkedBlockingQueue<>(1),
                     new ThreadPoolExecutor.CallerRunsPolicy());
     
-    private static final ExecutorService syncPool = new ThreadPoolExecutor(1, 1, 1, TimeUnit.SECONDS, new SynchronousQueue<>(),
+    private static final ExecutorService syncPool = new ThreadPoolExecutor(1, 2, 10, TimeUnit.SECONDS, new SynchronousQueue<>(),
+                    // new ThreadPoolExecutor.AbortPolicy());
                     new ThreadPoolExecutor.CallerRunsPolicy());
     
     /**

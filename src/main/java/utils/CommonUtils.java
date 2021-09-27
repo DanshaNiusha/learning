@@ -3,8 +3,12 @@ package utils;
 import com.alibaba.fastjson.JSON;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
+import model.Model1;
+import model.Model2;
+import model.Model3;
 import org.apache.commons.collections.MapUtils;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -42,16 +46,35 @@ public class CommonUtils {
         return list;
     }
     
+    /**
+     * 深拷贝Json方式实现
+     */
+    public static <T> T deepClone(T origin, Class<T> clazz) {
+        return JSON.parseObject(JSON.toJSONString(origin), clazz);
+    }
+    
+    
     public static void main(String[] args) {
-        HashMap<Integer, String> map = Maps.newHashMap();
-        map.put(1,"a");
-        map.put(2,"b");
-        map.put(3,"c");
-        map.put(4,"d");
-        map.put(5,"e");
-        List<Map<Integer, String>> maps = CommonUtils.partitionMap(map, 2);
-        System.out.println(JSON.toJSONString(maps));
-    
-    
+        /////////////////////test clone////////////////////
+        Model3 model3 = new Model3(1L, "dansha");
+        Model2 model2 = new Model2(1L, model3);
+        Model1 model1 = new Model1(1L, model2);
+        List<Model1> list = Lists.newArrayList();
+        list.add(model1);
+        list.add(deepClone(model1, Model1.class));
+        System.out.println("before: "+list);
+        model3.setName("niusha");
+        System.out.println("after: "+list);
+        
+        
+        //////////////////////test map /////////////////
+        // HashMap<Integer, String> map = Maps.newHashMap();
+        // map.put(1,"a");
+        // map.put(2,"b");
+        // map.put(3,"c");
+        // map.put(4,"d");
+        // map.put(5,"e");
+        // List<Map<Integer, String>> maps = CommonUtils.partitionMap(map, 2);
+        // System.out.println(JSON.toJSONString(maps));
     }
 }

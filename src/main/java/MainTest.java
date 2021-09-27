@@ -2,6 +2,7 @@ import com.google.common.collect.HashBasedTable;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
 import lombok.extern.java.Log;
+import model.Model3;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.time.StopWatch;
 import org.apache.commons.lang3.tuple.Pair;
@@ -35,7 +36,8 @@ public class MainTest {
         // Map<String, String> collect = emptyList.stream().filter(x->x.getSex()!=null).collect(Collectors.toMap(model.Mode3::getName, model.Mode3::getSex));
         // System.out.println(11);
         //
-    
+        // Model3 model3 = new Model3();
+        // Optional.ofNullable(model3).map(m ->m.getName() ).orElse("")
         // List<Integer> list = Lists.newArrayList();
         // list.add(1);
         // list.add(2);
@@ -56,9 +58,9 @@ public class MainTest {
         //     System.out.println("eeeeeee");
         // }
     
-        new ThreadTester("T1").start();
-        new ThreadTester("T2").start();
-        System.out.println("结束------------");
+        // new ThreadTester("T1").start();
+        // new ThreadTester("T2").start();
+        // System.out.println("结束------------");
     
     }
     

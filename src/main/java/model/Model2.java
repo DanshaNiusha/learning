@@ -10,4 +10,5 @@ import lombok.NoArgsConstructor;
 public class Model2 {
     private Long id;
     private Model3 model3;
+    private Model1 model1;
 }

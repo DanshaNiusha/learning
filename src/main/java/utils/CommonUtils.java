@@ -56,17 +56,17 @@ public class CommonUtils {
     
     public static void main(String[] args) {
         /////////////////////test clone////////////////////
-        Model3 model3 = new Model3(1L, "dansha");
-        Model2 model2 = new Model2(1L, model3);
-        Model1 model1 = new Model1(1L, model2);
-        List<Model1> list = Lists.newArrayList();
-        list.add(model1);
-        // mapstruct的深拷贝只能拷一层 不要用
-        // list.add(ModelMapStruct.INSTANCE.convert2Model1(model1));
-        list.add(deepClone(model1, Model1.class));
-        System.out.println("before: "+list);
-        model3.setName("niusha");
-        System.out.println("after: "+list);
+        // Model3 model3 = new Model3(1L, "dansha");
+        // Model2 model2 = new Model2(1L, model3);
+        // Model1 model1 = new Model1(1L, model2);
+        // List<Model1> list = Lists.newArrayList();
+        // list.add(model1);
+        // // mapstruct的深拷贝只能拷一层 不要用
+        // // list.add(ModelMapStruct.INSTANCE.convert2Model1(model1));
+        // list.add(deepClone(model1, Model1.class));
+        // System.out.println("before: "+list);
+        // model3.setName("niusha");
+        // System.out.println("after: "+list);
         
         
         //////////////////////test map /////////////////

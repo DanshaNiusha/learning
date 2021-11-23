@@ -3,12 +3,19 @@ package utils;
 import com.alibaba.fastjson.JSON;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
+import com.google.common.collect.Range;
+import com.google.common.collect.RangeSet;
+import com.google.common.collect.TreeRangeSet;
 import model.Model1;
 import model.Model2;
 import model.Model3;
 import org.apache.commons.collections.MapUtils;
+import org.apache.commons.lang3.time.DateFormatUtils;
+import org.apache.commons.lang3.time.DateUtils;
 
+import java.text.ParseException;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -54,7 +61,44 @@ public class CommonUtils {
     }
     
     
-    public static void main(String[] args) {
+    
+    /**
+     * 判断接待时间段是否有交集
+     * @return true: 有交集  false: 无交集
+     */
+    private static boolean judgeIntersect() throws ParseException {
+        List<Range<Date>> ranges = Lists.newArrayList();
+        Date startDate = DateUtils.parseDate("10:00", "HH:mm");
+        Date endDate = DateUtils.parseDate("12:01", "HH:mm");
+        ranges.add(Range.closed(startDate, endDate));
+        Date startDate1 = DateUtils.parseDate("12:00", "HH:mm");
+        Date endDate1 = DateUtils.parseDate("15:00", "HH:mm");
+        ranges.add(Range.closed(startDate1, endDate1));
+        return judgeDateIntersect(ranges);
+    }
+    
+    
+    /**
+     * 日期段是否有重叠 例如闭区间[10:00,13:00]与[11:00,15:00]为重叠
+     * @param ranges 日期范围集合
+     * @return 是否有交集
+     */
+    public static boolean judgeDateIntersect(List<Range<Date>> ranges) {
+        RangeSet<Date> rangeSet = TreeRangeSet.create();
+        for (Range<Date> range : ranges) {
+            if (rangeSet.intersects(range)) {
+                // 有交集
+                return true;
+            }
+            rangeSet.add(range);
+        }
+        // 无交集
+        return false;
+        
+    }
+    
+    
+    public static void main(String[] args) throws Exception {
         /////////////////////test clone////////////////////
         // Model3 model3 = new Model3(1L, "dansha");
         // Model2 model2 = new Model2(1L, model3);
@@ -78,5 +122,6 @@ public class CommonUtils {
         // map.put(5,"e");
         // List<Map<Integer, String>> maps = CommonUtils.partitionMap(map, 2);
         // System.out.println(JSON.toJSONString(maps));
+        System.out.println(judgeIntersect());
     }
 }

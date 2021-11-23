@@ -1,22 +1,13 @@
 package utils;
 
-import com.google.common.collect.Lists;
-import com.google.common.collect.Sets;
 import org.apache.commons.io.IOUtils;
-import org.apache.commons.lang3.StringUtils;
 
-import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileReader;
-import java.io.IOException;
 import java.io.InputStream;
 import java.nio.charset.StandardCharsets;
 import java.util.Arrays;
-import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
-import java.util.stream.LongStream;
-import java.util.stream.Stream;
 
 /**
  * @author liuxiaokang
@@ -41,7 +32,7 @@ public class ProductIdUtils {
     
     
     public static void main(String[] args) throws Exception {
-        InputStream stream = new FileInputStream("/Users/liuxiaokang03/Desktop/在线.txt");
+        InputStream stream = new FileInputStream("/Users/liuxiaokang03/Desktop/刷数据goods-20211123.txt");
         String txt = IOUtils.toString(stream, StandardCharsets.UTF_8);
         // 转productid
         Set<Long> ret = Arrays.stream(txt.split(",")).map(Long::valueOf).map(ProductIdUtils::getProductIdResultFromGoodsId).collect(Collectors.toSet());

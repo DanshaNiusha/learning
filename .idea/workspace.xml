@@ -4,16 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e11cfef8-d2e1-4298-92de-76e5c2d4ff4a" name="Default Changelist" comment="dsa">
-      <change afterPath="$PROJECT_DIR$/src/main/java/jdk/guava/RangeSetTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/jdk/stream/partitionByTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/jdk/stream/partitionMapTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/utils/ThreadPoolUtils.java" afterDir="false" />
+    <list default="true" id="e11cfef8-d2e1-4298-92de-76e5c2d4ff4a" name="Default Changelist" comment="id工具">
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/juc/thread/test/Test.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/MainTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MainTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/jdk/guava/LimiterTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jdk/guava/LimiterTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/juc/thread/test/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/ProductIdUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/ProductIdUtils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,8 +21,19 @@
       </list>
     </option>
   </component>
+  <component name="FindBugs-IDEA-Workspace">
+    <toolWindowEditorPreview>false</toolWindowEditorPreview>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -48,29 +53,58 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/juc/thread/concurrency" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="ReaderModeSettings">
     <option name="showRenderedDocs" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/juc/thread/concurrency" />
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="model" />
       <recent name="jdk.stream" />
       <recent name="utils" />
       <recent name="jdk.guava" />
     </key>
   </component>
   <component name="RunManager" selected="Application.MainTest">
+    <configuration name="CommonUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="utils.CommonUtils" />
+      <module name="learning" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MainTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MainTest" />
       <module name="learning" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductIdUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="utils.ProductIdUtils" />
+      <module name="learning" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -88,52 +122,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ThreadPoolUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="utils.ThreadPoolUtils" />
-      <module name="learning" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="utils.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="partitionByTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="jdk.stream.partitionByTest" />
-      <module name="learning" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="jdk.stream.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="partitionMapTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="jdk.stream.partitionMapTest" />
-      <module name="learning" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="jdk.stream.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CacheTest.test01" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="learning" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="jdk.guava.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="jdk.guava" />
+      <option name="MAIN_CLASS_NAME" value="jdk.guava.CacheTest" />
+      <option name="METHOD_NAME" value="test01" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -152,10 +165,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.MainTest" />
-        <item itemvalue="Application.partitionMapTest" />
-        <item itemvalue="Application.partitionByTest" />
-        <item itemvalue="Application.ThreadPoolUtils" />
+        <item itemvalue="Application.ProductIdUtils" />
+        <item itemvalue="Application.CommonUtils" />
         <item itemvalue="Application.RangeSetTest" />
+        <item itemvalue="JUnit.CacheTest.test01" />
       </list>
     </recent_temporary>
   </component>
@@ -185,6 +198,52 @@
       <workItem from="1627905807186" duration="1641000" />
       <workItem from="1627960562688" duration="1500000" />
       <workItem from="1628077523874" duration="2385000" />
+      <workItem from="1628130322453" duration="80000" />
+      <workItem from="1628132747464" duration="604000" />
+      <workItem from="1628598140171" duration="641000" />
+      <workItem from="1628847405860" duration="302000" />
+      <workItem from="1628847715658" duration="9000" />
+      <workItem from="1628847863926" duration="687000" />
+      <workItem from="1629085361846" duration="493000" />
+      <workItem from="1629098516952" duration="7884000" />
+      <workItem from="1629167259806" duration="23000" />
+      <workItem from="1629169467958" duration="1334000" />
+      <workItem from="1629278585196" duration="525000" />
+      <workItem from="1629341461637" duration="1776000" />
+      <workItem from="1629439664957" duration="397000" />
+      <workItem from="1629445214210" duration="662000" />
+      <workItem from="1629447816953" duration="774000" />
+      <workItem from="1629452023735" duration="783000" />
+      <workItem from="1629712404112" duration="296000" />
+      <workItem from="1629795754963" duration="621000" />
+      <workItem from="1629884841184" duration="673000" />
+      <workItem from="1629889850360" duration="439000" />
+      <workItem from="1629965243557" duration="808000" />
+      <workItem from="1630315461838" duration="607000" />
+      <workItem from="1630633761454" duration="3886000" />
+      <workItem from="1631696855787" duration="2542000" />
+      <workItem from="1631766671900" duration="22000" />
+      <workItem from="1631931395302" duration="2649000" />
+      <workItem from="1632473451014" duration="549000" />
+      <workItem from="1632656905529" duration="622000" />
+      <workItem from="1632709885655" duration="3825000" />
+      <workItem from="1632732274499" duration="1171000" />
+      <workItem from="1632797258494" duration="587000" />
+      <workItem from="1632970267031" duration="593000" />
+      <workItem from="1633680991745" duration="1235000" />
+      <workItem from="1633748142250" duration="12000" />
+      <workItem from="1634115784654" duration="2156000" />
+      <workItem from="1634200123838" duration="23000" />
+      <workItem from="1634290021292" duration="644000" />
+      <workItem from="1634524501396" duration="332000" />
+      <workItem from="1634537771668" duration="880000" />
+      <workItem from="1635317277001" duration="1853000" />
+      <workItem from="1635425311419" duration="1282000" />
+      <workItem from="1635478767379" duration="544000" />
+      <workItem from="1635487484540" duration="8489000" />
+      <workItem from="1637636833024" duration="716000" />
+      <workItem from="1637655406082" duration="689000" />
+      <workItem from="1637660764976" duration="753000" />
     </task>
     <task id="LOCAL-00001" summary="dsa">
       <created>1627367050746</created>
@@ -193,18 +252,103 @@
       <option name="project" value="LOCAL" />
       <updated>1627367050746</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="dsa">
+      <created>1629101732637</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1629101732637</updated>
+    </task>
+    <task id="LOCAL-00003" summary="cache">
+      <created>1629104076698</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1629104076698</updated>
+    </task>
+    <task id="LOCAL-00004" summary="cache">
+      <created>1629104451456</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1629104451456</updated>
+    </task>
+    <task id="LOCAL-00005" summary="cache">
+      <created>1629452354790</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1629452354790</updated>
+    </task>
+    <task id="LOCAL-00006" summary="深拷贝">
+      <created>1632711993439</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1632711993439</updated>
+    </task>
+    <task id="LOCAL-00007" summary="深拷贝">
+      <created>1632712966178</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1632712966178</updated>
+    </task>
+    <task id="LOCAL-00008" summary="深拷贝">
+      <created>1632734454597</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1632734454598</updated>
+    </task>
+    <task id="LOCAL-00009" summary="id工具">
+      <created>1635499573329</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1635499573329</updated>
+    </task>
+    <task id="LOCAL-00010" summary="id工具">
+      <created>1637637500101</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1637637500101</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -212,16 +356,26 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="dsa" />
-    <option name="LAST_COMMIT_MESSAGE" value="dsa" />
+    <MESSAGE value="cache" />
+    <MESSAGE value="深拷贝" />
+    <MESSAGE value="id工具" />
+    <option name="LAST_COMMIT_MESSAGE" value="id工具" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/MainTest.java</url>
-          <line>34</line>
-          <option name="timeStamp" value="1" />
+          <url>file://$PROJECT_DIR$/src/main/java/test/TreeTest.java</url>
+          <line>61</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/jdk/guava/CacheTest.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

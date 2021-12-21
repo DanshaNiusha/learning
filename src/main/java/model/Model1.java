@@ -8,10 +8,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Model1 {
-    private Long id;
-    private Model2 model2;
-    
-    // public Model1() {
-    // }
+    private Long id111;
+    // private String name;
     
 }

@@ -1,24 +1,20 @@
-import cn.hutool.core.date.DateUtil;
-import cn.hutool.core.thread.ThreadUtil;
+import com.google.common.base.Joiner;
 import com.google.common.collect.Lists;
-import com.google.common.collect.Maps;
-import model.Model2;
-import org.apache.commons.lang3.time.DateUtils;
+import model.Model1;
 import org.joda.time.DateTime;
-import org.joda.time.LocalDate;
+import org.joda.time.format.DateTimeFormat;
 
-import javax.validation.constraints.NotNull;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
 import java.util.*;
-import java.util.concurrent.CountDownLatch;
-import java.util.concurrent.TimeUnit;
 
 /**
  * @author liuxiaokang
  * @date 2021/7/6
  */
 public class MainTest {
+    public static final String DATE_INT_FORMAT = "yyyyMMdd";
+    private static final org.joda.time.format.DateTimeFormatter JODA_FORMAT = DateTimeFormat.forPattern(DATE_INT_FORMAT);
+    private static final Joiner joiner = Joiner.on(",").useForNull("-1");
+    
     public static void main(String[] args) throws InterruptedException {
         // Model2 model2 =  Model2.builder().id(null).name("111").build();
         // model2.setName(null);
@@ -30,8 +26,11 @@ public class MainTest {
         // mtaRealRoomTypeModelMapTemp.get(null);
         //
         // Model2 model2 = Model2.builder().id(null).name("111").build();
-        // Long id = model2 == null ? 0L : model2.getId();
-        
+        // Integer id = model2 == null ? 0 : model2.getId();
+        // Long operatorId = Optional.ofNullable(model2).map(Model2::getId).orElse(0L);
+        // Long customerId=null;
+        // Long l = model2 == null ? 0L : customerId;
+        // System.out.println(customerId);
         // ArrayList<Integer> list = Lists.newArrayList(1, 2, 3, 1, 1, 2);
         // HashMap<Integer, Integer> map = Maps.newHashMap();
         // for (Integer num : list) {
@@ -42,7 +41,7 @@ public class MainTest {
         // }
         //
         // List<Integer> integers = fillMonths(2, 8);
-    
+        // System.out.println(JSON.toJSONString(new GoodsQueryByPoiParam()));
         // int weekOfDate = getWeekOfDate("2021-12-15", "yyyy-MM-dd");
     
         // boolean weekEnd = isWeekEnd("2022-01-01", "yyyy-MM-dd", "6,7");
@@ -55,104 +54,66 @@ public class MainTest {
         // System.out.println(fillMonths(7,2));
     
         // System.out.println(fillMonths(LocalDate.now(), LocalDate.now().plusMonths(2)));
-        CountDownLatch countDownLatch = new CountDownLatch(10);
-        for (int i = 0; i < 10; i++) {
-            ThreadUtil.execute(()->{
-                try {
-                    TimeUnit.MICROSECONDS.sleep(1);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-                countDownLatch.countDown();
-            });
-           
+        // CountDownLatch countDownLatch = new CountDownLatch(10);
+        // for (int i = 0; i < 10; i++) {
+        //     ThreadUtil.execute(()->{
+        //         try {
+        //             TimeUnit.MICROSECONDS.sleep(1);
+        //         } catch (InterruptedException e) {
+        //             e.printStackTrace();
+        //         }
+        //         countDownLatch.countDown();
+        //     });
+        //
+        // }
+        // List<Integer> activityCodeList = Lists.newArrayList(33);
+        //
+        // for (int i = 0; i < 3; i++) {
+        //     String join = joiner.join(activityCodeList);
+        //     System.out.println(join);
+        // }
+        // Integer a = 1;
+        //
+        // Model1<Long> model1 = new Model1<>();
+        // Model1<Integer> model2 = new Model1<>();
+        // Object s= model2;
+        // Model1<Long>  mm =  s;
+        //
+        //
+        // model1.setValue(s);
+        //
+        // Long b = Long.parseLong(s.toString());
+        
+        
+        
+    }
+    public static List<Integer> splitToDateList(int startDate, int endDate) {
+        List<Integer> list = new ArrayList<>();
+        
+        DateTime startDateTime = parseIntToDateTime(startDate);
+        DateTime endDateTime = parseIntToDateTime(endDate);
+        
+        //  判断开始时间是否大于结束时间
+        if (startDateTime.isAfter(endDateTime)) {
+            return list;
         }
-        boolean await = countDownLatch.await(1, TimeUnit.SECONDS);
-        System.out.println(await);
-        System.out.println(11);
-    }
-    
-    private static List<LocalDate> fillMonths(LocalDate startDate, LocalDate endDate) {
-        List<LocalDate> months = Lists.newArrayList();
-        int startMonth = startDate.getMonthOfYear();
-        int endMonth = endDate.getMonthOfYear();
-        for (int i = startMonth; i <= (startMonth > endMonth ? endMonth + 12 : endMonth); i++) {
-            if (i > 12) {
-                Calendar calendar = Calendar.getInstance();
-                calendar.set(Calendar.YEAR, endDate.getYear());
-                calendar.set(Calendar.MONTH, (i % 12) - 1);
-                calendar.set(Calendar.DAY_OF_MONTH, 1);
-                months.add(LocalDate.fromCalendarFields(calendar));
-            } else {
-                Calendar calendar = Calendar.getInstance();
-                calendar.set(Calendar.YEAR, startDate.getYear());
-                calendar.set(Calendar.MONTH, i - 1);
-                calendar.set(Calendar.DAY_OF_MONTH, 1);
-                months.add(LocalDate.fromCalendarFields(calendar));
-            }
+        
+        for (; startDateTime.isBefore(endDateTime); ) {
+            list.add(Integer.parseInt(startDateTime.toString(JODA_FORMAT)));
+            startDateTime = startDateTime.plusDays(1);
         }
-        return months;
+        list.add(Integer.parseInt(startDateTime.toString(JODA_FORMAT)));
+        return list;
     }
     
     
-    /**
-     * 获取某月的最后一天
-     */
-    public static Date getFirstDayOfMonth(int month) {
-        Calendar cal = Calendar.getInstance();
-        cal.set(Calendar.MONTH, month - 1);
-        cal.set(Calendar.DAY_OF_MONTH, cal.getActualMinimum(Calendar.DAY_OF_MONTH));
-        return cal.getTime();
-    }
-    
-    /**
-     * 获取某月的最后一天
-     */
-    public static Date getLastDayOfMonth(int month) {
-        Calendar cal = Calendar.getInstance();
-        cal.set(Calendar.MONTH, month - 1);
-        cal.set(Calendar.DAY_OF_MONTH, cal.getActualMaximum(Calendar.DAY_OF_MONTH));
-        return cal.getTime();
+    public static DateTime parseIntToDateTime(int dateInt) {
+        return stringDateParseDateTime(String.valueOf(dateInt));
     }
     
     
-    public static boolean isWeekEnd(String date, String pattern, String weekendDefinition) {
-        int week =getWeekOfDate(date, pattern);
-        boolean isWeekEnd = weekendDefinition.contains(String.valueOf(week == 0 ? 7 : week));
-        return isWeekEnd;
-    }
-    
-    /**
-     * 获取周几
-     *
-     * @param date
-     * @param pattern
-     * @return
-     */
-    public static int getWeekOfDate(String date, String pattern) {
-        SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
-        Date date1 = null;
-        try {
-            date1 = simpleDateFormat.parse(String.valueOf(date));
-        } catch (ParseException e) {
-            // log.error("获取周几异常", e);
-        }
-        Calendar aCalendar = Calendar.getInstance();
-        aCalendar.setTime(date1);
-        return aCalendar.get(Calendar.DAY_OF_WEEK) - 1;
-    }
-    
-    
-    private static List<Integer> fillMonths(int startMonth, int endMonth) {
-        List<Integer> months = Lists.newArrayList();
-        for (int i = startMonth; i <= (startMonth > endMonth ? endMonth + 12 : endMonth); i++) {
-            months.add(i > 12 ? i % 12 : i);
-        }
-        return months;
-    }
-    
-    @NotNull
-    private static void test(Model2 model2 ){
+    public static DateTime stringDateParseDateTime(String strDate) {
+        return DateTime.parse(strDate, JODA_FORMAT);
     }
 }
 

@@ -13,6 +13,7 @@ import javax.validation.constraints.NotNull;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Model2{
-    private Long id;
+    private Integer id;
     private String name;
+    private boolean man;
 }

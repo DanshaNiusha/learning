@@ -1,4 +1,4 @@
-package design.msgsender;
+package design.bridge.msgsender;
 
 public class WechatMsgSender implements MsgSender {
     @Override

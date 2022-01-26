@@ -1,8 +1,6 @@
-package design.notification;
+package design.bridge.notification;
 
-import design.msgsender.MsgSender;
-
-import java.util.List;
+import design.bridge.msgsender.MsgSender;
 
 /**
  * 程度A
@@ -19,6 +17,6 @@ public class SevereNotification extends Notification {
         // for (String user : userList) {
         //     msgSender.send(message + user);
         // }
-       
+        //
     }
 }

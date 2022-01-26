@@ -1,6 +1,4 @@
-package design.msgsender;
-
-import java.util.List;
+package design.bridge.msgsender;
 
 public class TelephoneMsgSender implements MsgSender {
 

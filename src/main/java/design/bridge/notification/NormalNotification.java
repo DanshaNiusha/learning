@@ -1,10 +1,11 @@
-package design.notification;
+package design.bridge.notification;
 
-import design.msgsender.MsgSender;
+import design.bridge.msgsender.MsgSender;
 
 public class NormalNotification extends Notification {
-    public NormalNotification(MsgSender msgSender) {
-        super(msgSender);
+    
+    public NormalNotification(MsgSender msgSender,Integer role) {
+        super(msgSender,role);
     }
     
     @Override

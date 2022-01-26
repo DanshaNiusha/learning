@@ -1,6 +1,6 @@
-package design.notification;
+package design.bridge.notification;
 
-import design.msgsender.MsgSender;
+import design.bridge.msgsender.MsgSender;
 
 public abstract class Notification {
   
@@ -11,6 +11,8 @@ public abstract class Notification {
   public Notification(MsgSender msgSender) {
     this.msgSender = msgSender;
   }
+  
+  
   public Notification(MsgSender msgSender,Integer role) {
     this.msgSender = msgSender;
     this.role = role;

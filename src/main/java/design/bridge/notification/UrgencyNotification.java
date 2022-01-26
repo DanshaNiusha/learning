@@ -1,6 +1,6 @@
-package design.notification;
+package design.bridge.notification;
 
-import design.msgsender.MsgSender;
+import design.bridge.msgsender.MsgSender;
 
 public class UrgencyNotification extends Notification {
     public UrgencyNotification(MsgSender msgSender) {

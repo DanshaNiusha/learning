@@ -4,10 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e11cfef8-d2e1-4298-92de-76e5c2d4ff4a" name="Default Changelist" comment="id工具">
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/ProductIdUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/ProductIdUtils.java" afterDir="false" />
+    <list default="true" id="e11cfef8-d2e1-4298-92de-76e5c2d4ff4a" name="Default Changelist" comment="多维度桥接模式">
+      <change afterPath="$PROJECT_DIR$/src/main/java/design/bridge/notification/NotificationFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/design/DesignTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/design/bridge/DesignTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/design/msgsender/EmailMsgSender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/design/bridge/msgsender/EmailMsgSender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/design/msgsender/MsgSender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/design/bridge/msgsender/MsgSender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/design/msgsender/TelephoneMsgSender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/design/bridge/msgsender/TelephoneMsgSender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/design/msgsender/WechatMsgSender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/design/bridge/msgsender/WechatMsgSender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/design/notification/NormalNotification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/design/bridge/notification/NormalNotification.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/design/notification/Notification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/design/bridge/notification/Notification.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/design/notification/SevereNotification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/design/bridge/notification/SevereNotification.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/design/notification/UrgencyNotification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/design/bridge/notification/UrgencyNotification.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +24,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="TypeScript File" />
+        <option value="Kotlin Script" />
         <option value="Class" />
       </list>
     </option>
@@ -58,7 +67,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="ReaderModeSettings">
     <option name="showRenderedDocs" value="false" />
@@ -69,6 +78,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="design.bridge.notification" />
       <recent name="model" />
       <recent name="jdk.stream" />
       <recent name="utils" />
@@ -76,12 +86,12 @@
     </key>
   </component>
   <component name="RunManager" selected="Application.MainTest">
-    <configuration name="CommonUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="utils.CommonUtils" />
+    <configuration name="JodaTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="jdk.localdate.joda.JodaTest" />
       <module name="learning" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="utils.*" />
+          <option name="PATTERN" value="jdk.localdate.joda.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -96,56 +106,60 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProductIdUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="utils.ProductIdUtils" />
-      <module name="learning" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="utils.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RangeSetTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="jdk.guava.RangeSetTest" />
-      <module name="learning" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="jdk.guava.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CacheTest.test01" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="JodaTest.testDateTime" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="learning" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="jdk.guava.*" />
+          <option name="PATTERN" value="jdk.localdate.joda.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="jdk.guava" />
-      <option name="MAIN_CLASS_NAME" value="jdk.guava.CacheTest" />
-      <option name="METHOD_NAME" value="test01" />
+      <option name="PACKAGE_NAME" value="jdk.localdate.joda" />
+      <option name="MAIN_CLASS_NAME" value="jdk.localdate.joda.JodaTest" />
+      <option name="METHOD_NAME" value="testDateTime" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JodaTest.testPeriod" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="learning" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="jdk.localdate.joda.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="jdk.localdate.joda" />
+      <option name="MAIN_CLASS_NAME" value="jdk.localdate.joda.JodaTest" />
+      <option name="METHOD_NAME" value="testPeriod" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JodaTest.testProperty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="learning" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="jdk.localdate.joda.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="jdk.localdate.joda" />
+      <option name="MAIN_CLASS_NAME" value="jdk.localdate.joda.JodaTest" />
+      <option name="METHOD_NAME" value="testProperty" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -165,10 +179,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.MainTest" />
-        <item itemvalue="Application.ProductIdUtils" />
-        <item itemvalue="Application.CommonUtils" />
-        <item itemvalue="Application.RangeSetTest" />
-        <item itemvalue="JUnit.CacheTest.test01" />
+        <item itemvalue="JUnit.JodaTest.testPeriod" />
+        <item itemvalue="JUnit.JodaTest.testProperty" />
+        <item itemvalue="JUnit.JodaTest.testDateTime" />
+        <item itemvalue="Application.JodaTest" />
       </list>
     </recent_temporary>
   </component>
@@ -243,7 +257,40 @@
       <workItem from="1635487484540" duration="8489000" />
       <workItem from="1637636833024" duration="716000" />
       <workItem from="1637655406082" duration="689000" />
-      <workItem from="1637660764976" duration="753000" />
+      <workItem from="1637660764976" duration="1193000" />
+      <workItem from="1637725613839" duration="3000" />
+      <workItem from="1638239883068" duration="2014000" />
+      <workItem from="1638349832130" duration="509000" />
+      <workItem from="1638415765280" duration="3115000" />
+      <workItem from="1638437092072" duration="810000" />
+      <workItem from="1638758621482" duration="1882000" />
+      <workItem from="1639031418581" duration="7087000" />
+      <workItem from="1639485896802" duration="3906000" />
+      <workItem from="1639535151141" duration="5000" />
+      <workItem from="1639551570709" duration="9680000" />
+      <workItem from="1639836818075" duration="562000" />
+      <workItem from="1639911565189" duration="10000" />
+      <workItem from="1640059686525" duration="2342000" />
+      <workItem from="1640144904259" duration="575000" />
+      <workItem from="1640153846032" duration="2916000" />
+      <workItem from="1640244731237" duration="1402000" />
+      <workItem from="1640325865750" duration="750000" />
+      <workItem from="1640747580113" duration="11320000" />
+      <workItem from="1641263712267" duration="32000" />
+      <workItem from="1641263882655" duration="9723000" />
+      <workItem from="1641537137259" duration="686000" />
+      <workItem from="1641799775082" duration="3242000" />
+      <workItem from="1641869752633" duration="415000" />
+      <workItem from="1641881050728" duration="5000" />
+      <workItem from="1642144373270" duration="744000" />
+      <workItem from="1642387472451" duration="591000" />
+      <workItem from="1642565994162" duration="1348000" />
+      <workItem from="1642669184403" duration="1620000" />
+      <workItem from="1642992451241" duration="1445000" />
+      <workItem from="1643025222560" duration="146000" />
+      <workItem from="1643097857277" duration="1221000" />
+      <workItem from="1643164260395" duration="630000" />
+      <workItem from="1643169285315" duration="4185000" />
     </task>
     <task id="LOCAL-00001" summary="dsa">
       <created>1627367050746</created>
@@ -315,7 +362,21 @@
       <option name="project" value="LOCAL" />
       <updated>1637637500101</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="id工具">
+      <created>1640090189621</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1640090189621</updated>
+    </task>
+    <task id="LOCAL-00012" summary="多维度桥接模式">
+      <created>1643170531661</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1643170531661</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -362,7 +423,8 @@
     <MESSAGE value="cache" />
     <MESSAGE value="深拷贝" />
     <MESSAGE value="id工具" />
-    <option name="LAST_COMMIT_MESSAGE" value="id工具" />
+    <MESSAGE value="多维度桥接模式" />
+    <option name="LAST_COMMIT_MESSAGE" value="多维度桥接模式" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -376,6 +438,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/jdk/guava/CacheTest.java</url>
           <line>24</line>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/MainTest.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

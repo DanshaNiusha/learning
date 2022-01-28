@@ -9,10 +9,8 @@ import lombok.NoArgsConstructor;
 @Data
 @Builder
 @AllArgsConstructor
-public class Model1<T> {
-    private Long id111;
+public class Model1{
+    private Integer id111;
     private boolean man;
-    private T value;
-    // private String name;
     
 }

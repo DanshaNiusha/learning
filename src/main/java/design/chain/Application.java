@@ -1,0 +1,14 @@
+package design.chain;
+
+/**
+ * 数组方式的责任链模式,使用更加简单
+ */
+public class Application {
+    
+    public static void main(String[] args) {
+        HandlerChain chain = new HandlerChain();
+        chain.addHandler(new HandlerA());
+        chain.addHandler(new HandlerB());
+        chain.handle();
+    }
+}

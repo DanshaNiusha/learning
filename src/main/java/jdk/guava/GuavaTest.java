@@ -1,11 +1,7 @@
 package jdk.guava;
 
 import com.google.common.base.*;
-import com.google.common.collect.Collections2;
-import com.google.common.collect.ImmutableMap;
-import com.google.common.collect.Lists;
-import com.google.common.collect.Maps;
-import com.google.common.collect.MoreCollectors;
+import com.google.common.collect.*;
 import org.checkerframework.checker.nullness.qual.Nullable;
 
 import java.util.ArrayList;
@@ -41,28 +37,30 @@ public class GuavaTest {
         });
         System.out.println(transform);
     
-        
-        
+    
+        /**
+         * 一种key 多个value 相同的value会去重 代替Map<Integer,Set<Integer>>
+         */
+        Multimap<Integer, Integer> multimap = HashMultimap.create();
+        multimap.put(1, 2);
+        multimap.put(1, 2);
+        multimap.put(1, 3);
+        multimap.put(2, 3);
+        multimap.put(3, 3);
+        multimap.put(4, 3);
+        System.out.println(multimap);
+        //判断集合中是否存在key-value为指定值得元素
+        System.out.println(multimap.containsEntry(1, 2));
+        //获取key为1的value集合
+        Collection<Integer> list1 = multimap.get(1);
+        System.out.println(list1);
+        //返回集合中所有key的集合，重复的key将会用key * num的方式来表示
+        Multiset<Integer> set = multimap.keys();
+        System.out.println(set);
+        // 返回集合中所有不重复的key的集合
+        System.out.println(multimap.keySet());
+    
+    
     }
     
-    enum PlatformVisitSourceEnum {
-        
-        //来源定义与网关的映射关系
-        MTA("MTA1", "1", 100),
-        
-        APP("APP2", "2", 300),
-        
-        APP_IOS("APP_IOS3", "3", 301);
-        
-        private String id;
-        private String name;
-        private Integer tenantId;
-        
-        PlatformVisitSourceEnum(String id, String name, Integer tenantId) {
-            this.name = name;
-            this.id = id;
-            this.tenantId = tenantId;
-        }
-        
-    }
 }

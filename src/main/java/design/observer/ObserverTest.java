@@ -1,26 +1,30 @@
-package design.bridge;
+package design.observer;
 
-import design.bridge.msgsender.TelephoneMsgSender;
+import com.google.common.collect.Lists;
 import design.bridge.notification.Notification;
 import design.bridge.notification.NotificationFactory;
-import design.bridge.notification.SevereNotification;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
- * 结构型:桥接模式 (组合优于继承)
- * 一个功能有多个变化的维度,通过组合的方式让每个维度可以独立的扩展
+ * 行为性:基于eventbus的观察者模式
  *
  * @author liuxiaokang
  * @date 2022/1/26
  */
-public class DesignTest {
+public class ObserverTest {
     
     public static void main(String[] args) {
-        List<Notification> notifications = NotificationFactory.create("改价");
-        for (Notification notification : notifications) {
-            notification.notify("消息内容");
-        }
+        UserController userController = new UserController();
+        // 注册观察者
+        List<Object> obs = Lists.newArrayList();
+        obs.add(new RegNotificationObserver());
+        obs.add(new RegPromotionObserver());
+        userController.setRegObservers(obs);
+    
+        String ret = userController.register(123L);
+        System.out.println(ret);
     }
     
     

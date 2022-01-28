@@ -4,17 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e11cfef8-d2e1-4298-92de-76e5c2d4ff4a" name="Default Changelist" comment="多维度桥接模式">
-      <change afterPath="$PROJECT_DIR$/src/main/java/design/bridge/notification/NotificationFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/design/DesignTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/design/bridge/DesignTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/design/msgsender/EmailMsgSender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/design/bridge/msgsender/EmailMsgSender.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/design/msgsender/MsgSender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/design/bridge/msgsender/MsgSender.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/design/msgsender/TelephoneMsgSender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/design/bridge/msgsender/TelephoneMsgSender.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/design/msgsender/WechatMsgSender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/design/bridge/msgsender/WechatMsgSender.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/design/notification/NormalNotification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/design/bridge/notification/NormalNotification.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/design/notification/Notification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/design/bridge/notification/Notification.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/design/notification/SevereNotification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/design/bridge/notification/SevereNotification.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/design/notification/UrgencyNotification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/design/bridge/notification/UrgencyNotification.java" afterDir="false" />
+    <list default="true" id="e11cfef8-d2e1-4298-92de-76e5c2d4ff4a" name="Default Changelist" comment="多维度桥接模式+工厂">
+      <change afterPath="$PROJECT_DIR$/src/main/java/design/observer/ObserverTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/design/observer/RegNotificationObserver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/design/observer/RegPromotionObserver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/design/observer/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jdk/guava/GuavaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jdk/guava/GuavaTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,20 +74,20 @@
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="design.observer" />
       <recent name="design.bridge.notification" />
       <recent name="model" />
       <recent name="jdk.stream" />
       <recent name="utils" />
-      <recent name="jdk.guava" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MainTest">
-    <configuration name="JodaTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="jdk.localdate.joda.JodaTest" />
+  <component name="RunManager" selected="Application.GuavaTest">
+    <configuration name="GuavaTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="jdk.guava.GuavaTest" />
       <module name="learning" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="jdk.localdate.joda.*" />
+          <option name="PATTERN" value="jdk.guava.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -106,6 +102,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ObserverTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="design.observer.ObserverTest" />
+      <module name="learning" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="design.observer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -113,22 +122,6 @@
         </value>
       </option>
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="JodaTest.testDateTime" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="learning" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="jdk.localdate.joda.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="jdk.localdate.joda" />
-      <option name="MAIN_CLASS_NAME" value="jdk.localdate.joda.JodaTest" />
-      <option name="METHOD_NAME" value="testDateTime" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -178,11 +171,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.GuavaTest" />
+        <item itemvalue="Application.ObserverTest" />
         <item itemvalue="Application.MainTest" />
         <item itemvalue="JUnit.JodaTest.testPeriod" />
         <item itemvalue="JUnit.JodaTest.testProperty" />
-        <item itemvalue="JUnit.JodaTest.testDateTime" />
-        <item itemvalue="Application.JodaTest" />
       </list>
     </recent_temporary>
   </component>
@@ -290,7 +283,9 @@
       <workItem from="1643025222560" duration="146000" />
       <workItem from="1643097857277" duration="1221000" />
       <workItem from="1643164260395" duration="630000" />
-      <workItem from="1643169285315" duration="4185000" />
+      <workItem from="1643169285315" duration="6025000" />
+      <workItem from="1643253954103" duration="734000" />
+      <workItem from="1643353064731" duration="2506000" />
     </task>
     <task id="LOCAL-00001" summary="dsa">
       <created>1627367050746</created>
@@ -376,7 +371,14 @@
       <option name="project" value="LOCAL" />
       <updated>1643170531661</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="多维度桥接模式+工厂">
+      <created>1643180369039</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1643180369039</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -424,7 +426,8 @@
     <MESSAGE value="深拷贝" />
     <MESSAGE value="id工具" />
     <MESSAGE value="多维度桥接模式" />
-    <option name="LAST_COMMIT_MESSAGE" value="多维度桥接模式" />
+    <MESSAGE value="多维度桥接模式+工厂" />
+    <option name="LAST_COMMIT_MESSAGE" value="多维度桥接模式+工厂" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -443,6 +446,31 @@
           <url>file://$PROJECT_DIR$/src/main/java/MainTest.java</url>
           <line>39</line>
           <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.m2/repository/com/google/guava/guava/30.1-jre/guava-30.1-jre-sources.jar!/com/google/common/eventbus/EventBus.java</url>
+          <line>209</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.m2/repository/com/google/guava/guava/30.1-jre/guava-30.1-jre-sources.jar!/com/google/common/eventbus/EventBus.java</url>
+          <line>185</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.m2/repository/com/google/guava/guava/30.1-jre/guava-30.1-jre-sources.jar!/com/google/common/eventbus/Dispatcher.java</url>
+          <line>155</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/lang/reflect/Method.java</url>
+          <line>487</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/design/observer/RegPromotionObserver.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

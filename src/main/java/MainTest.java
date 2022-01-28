@@ -83,8 +83,8 @@ public class MainTest {
         // model1.setValue(s);
         //
         // Long b = Long.parseLong(s.toString());
-        
-        
+        Byte b = Byte.valueOf("-126.5");
+        System.out.println(b);
         
     }
     public static List<Integer> splitToDateList(int startDate, int endDate) {

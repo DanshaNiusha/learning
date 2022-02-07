@@ -1,10 +1,12 @@
 import com.google.common.base.Joiner;
+import com.google.common.cache.CacheBuilder;
 import com.google.common.collect.Lists;
 import model.Model1;
 import org.joda.time.DateTime;
 import org.joda.time.format.DateTimeFormat;
 
 import java.util.*;
+import java.util.concurrent.CopyOnWriteArrayList;
 
 /**
  * @author liuxiaokang
@@ -83,9 +85,20 @@ public class MainTest {
         // model1.setValue(s);
         //
         // Long b = Long.parseLong(s.toString());
-        Byte b = Byte.valueOf("-126.5");
-        System.out.println(b);
-        
+        // Byte b = Byte.valueOf("-126.5");
+        // System.out.println(b);
+    
+        // List<Integer> list = Lists.newCopyOnWriteArrayList();
+        // list.add(1);
+        // for (Integer integer : list) {
+        //     list.add(2);
+        //     System.out.println(list);
+        //     list.remove((Integer) 2);
+        //     list.add(3);
+        // }
+        // System.out.println(list);
+        CacheBuilder.newBuilder().concurrencyLevel(1).build();
+    
     }
     public static List<Integer> splitToDateList(int startDate, int endDate) {
         List<Integer> list = new ArrayList<>();

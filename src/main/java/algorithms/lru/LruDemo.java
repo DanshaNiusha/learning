@@ -1,4 +1,4 @@
-package juc.thread.lru;
+package algorithms.lru;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -48,7 +48,7 @@ public class LruDemo {
                 map.remove(lastNode.key);
                 doubleLinkedList.removeNode(lastNode);
             }
-    
+            
             // 头插 前面是最新的
             Node<Integer, Integer> newNode = new Node<>(key, value);
             map.put(key, newNode);
@@ -58,7 +58,7 @@ public class LruDemo {
     }
     
     public static void main(String[] args) {
-    
+        
         LruDemo lruCacheDemo = new LruDemo(3);
         
         lruCacheDemo.put(1, 1);

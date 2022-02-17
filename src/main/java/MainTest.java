@@ -1,12 +1,15 @@
 import com.google.common.base.Joiner;
+import com.google.common.base.Stopwatch;
 import com.google.common.cache.CacheBuilder;
 import com.google.common.collect.Lists;
 import model.Model1;
+import org.apache.commons.lang3.time.StopWatch;
 import org.joda.time.DateTime;
 import org.joda.time.format.DateTimeFormat;
 
 import java.util.*;
 import java.util.concurrent.CopyOnWriteArrayList;
+import java.util.concurrent.TimeUnit;
 
 /**
  * @author liuxiaokang
@@ -97,7 +100,10 @@ public class MainTest {
         //     list.add(3);
         // }
         // System.out.println(list);
-        CacheBuilder.newBuilder().concurrencyLevel(1).build();
+        Stopwatch stopwatch = Stopwatch.createStarted();
+        Thread.sleep(220);
+        // System.out.println(stopwatch.elapsed(TimeUnit.MILLISECONDS));
+        System.out.println(TimeUnit.MILLISECONDS.toString());
     
     }
     public static List<Integer> splitToDateList(int startDate, int endDate) {

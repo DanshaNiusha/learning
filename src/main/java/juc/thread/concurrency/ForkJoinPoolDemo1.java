@@ -16,10 +16,10 @@ public class ForkJoinPoolDemo1 {
     
     public static void main(String[] args) throws Exception {
         // 创建随机数组成的数组:
-        long[] array = new long[100];
+        long[] array = new long[100000000];
         fillRandom(array);
         // fork/join task:
-        ForkJoinPool fjp = new ForkJoinPool(4); // 最大并发数4
+        ForkJoinPool fjp = new ForkJoinPool(16); // 最大并发数设置为核心数就可以,大了反而会慢
         ForkJoinTask<Long> task = new SumTask(array, 0, array.length);
         long startTime = System.currentTimeMillis();
         Long result = fjp.invoke(task);
@@ -36,7 +36,7 @@ public class ForkJoinPoolDemo1 {
     
     static class SumTask extends RecursiveTask<Long> {
         
-        static final int THRESHOLD = 50;
+        static final int THRESHOLD = 1000;
         long[] array;
         int start;
         int end;
@@ -55,10 +55,10 @@ public class ForkJoinPoolDemo1 {
                 for (int i = start; i < end; i++) {
                     sum += array[i];
                 }
-                try {
-                    Thread.sleep(1000);
-                } catch (InterruptedException e) {
-                }
+                // try {
+                //     Thread.sleep(1000);
+                // } catch (InterruptedException e) {
+                // }
                 System.out.println(String.format("compute %d~%d = %d", start, end, sum));
                 return sum;
             }

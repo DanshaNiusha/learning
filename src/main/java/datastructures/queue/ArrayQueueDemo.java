@@ -1,5 +1,8 @@
 package datastructures.queue;
 
+import org.junit.Test;
+
+import java.util.Arrays;
 import java.util.Scanner;
 
 /**
@@ -133,4 +136,7 @@ class ArrayQueue {
         }
         arr[++rear] = value;
     }
+    
+    
+    
 }

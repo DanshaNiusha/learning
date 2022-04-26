@@ -3,15 +3,19 @@ package model;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
 
-@Data
-@Builder
+@ToString
+@Setter
+@Getter
 @NoArgsConstructor
 @AllArgsConstructor
-public class Model1 {
+public class Model4 {
     private long id;
     private boolean man;
-    private Model3 model3;
+    private String name;
     
 }

@@ -7,6 +7,7 @@ import java.util.List;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Future;
 import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
@@ -57,24 +58,51 @@ public class CompletableFutureDemo {
     }
     
     /**
+     * complete()直接结束future,返回99默认值,不在等待
+     */
+    @Test
+    public void testComplet() throws ExecutionException, InterruptedException {
+        CompletableFuture<Integer> task = CompletableFuture.supplyAsync(new OddCombine());
+        task.complete(99);
+        Integer integer = task.get(); //99
+        System.out.println(integer);
+        
+    }
+    
+    /**
+     * 返回已完成的CompletableFuture.没卵用
+     */
+    @Test
+    public void testCompletedFuture() throws ExecutionException, InterruptedException {
+        Future<String> completableFuture = CompletableFuture.completedFuture("Hello");
+        System.out.println(completableFuture.get()); //Hello
+        
+    }
+    
+    /**
      * 实际应用,异步执行一堆任务并用返回值操作,然后等待执行完成,如果不需要返回值就不用CompletableFuture
      */
     @Test
     public void testJoin() throws ExecutionException, InterruptedException {
         List<CompletableFuture<Integer>> futureList = Lists.newArrayList();
-        for (int i = 0; i < 5; i++) {
-            int finalI = i;
-            futureList.add(CompletableFuture.supplyAsync(() -> addNum(finalI, 1), executor)
-                    .whenComplete((result, e) -> { // 这里是执行完后的附加操作,可以不要,因为addNUm的结果已经在Future中了,可以get
-                        System.out.println(result);
-                    })
-                    .exceptionally(e -> {
-                        // 这里捕获的是whencomplate中的异常 不是addNum的异常,addNUm异常会被外层捕获
-                        e.printStackTrace();
-                        return -1;
-                    })
-            );
+        try {
+            for (int i = 0; i < 5; i++) {
+                int finalI = i;
+                futureList.add(CompletableFuture.supplyAsync(() -> addNum(finalI, 1), executor)
+                        .whenComplete((result, e) -> { // 这里是执行完后的附加操作,可以不要,因为addNUm的结果已经在Future中了,可以get
+                            System.out.println(result);
+                        })
+                        .exceptionally(e -> {
+                            // 这里捕获的是whencomplate中的异常 不是addNum的异常,addNUm异常会被外层捕获
+                            System.out.println("inner eeee"+e.getMessage());
+                            return -1;
+                        })
+                );
+            }
+        } catch (Exception e) {
+            System.out.println("out eeee"+e.getMessage());
         }
+       
         //等待所有future执行完成
         CompletableFuture.allOf(futureList.toArray(new CompletableFuture[]{})).join();
         
@@ -94,6 +122,7 @@ public class CompletableFutureDemo {
     
     public int addNum(int a, int b) {
         try {
+            int m = 1/0;
             Thread.sleep(3000);
         } catch (InterruptedException e) {
             e.printStackTrace();
@@ -105,7 +134,7 @@ public class CompletableFutureDemo {
         @Override
         public Integer get() {
             try {
-                Thread.sleep(3000);
+                Thread.sleep(5000);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }

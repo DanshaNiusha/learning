@@ -1,22 +1,45 @@
 package juc.thread.thread;
 
+import org.junit.Test;
+
 import java.util.concurrent.TimeUnit;
 
 /**
  * 死锁是指两个或两个以上的进程在执行过程中，因争夺资源而造成的一种互相等待的现象，若无外力干涉那他们都将无法推进下去，
  */
 public class DeadLockDemo {
-    public static void main(String[] args) {
+    @Test
+    public void testDead() throws InterruptedException {
         String lockA = "lockA";
         String lockB = "lockB";
-        new Thread(new HoldThread(lockA,lockB),"Thread-AAA").start();
-        new Thread(new HoldThread(lockB,lockA),"Thread-BBB").start();
-
-        /**
-         * linux ps -ef|grep xxxx
-         * windows下的java运行程序也有类似ps的查看进程的命令，但是目前我们需要查看的
-         */
+        // new Thread(new HoldThread(lockA,lockB),"Thread-AAA").start();
+        // new Thread(new HoldThread(lockB,lockA),"Thread-BBB").start();
+        new Thread(()->m1()).start();
+        new Thread(()->m2()).start();
+        Thread.sleep(5000);
     }
+    
+    private synchronized void m1() {
+        synchronized (this) {
+        
+        }
+        System.out.println("m1---");
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+    
+    private synchronized void m2() {
+        System.out.println("m2---");
+        try {
+            Thread.sleep(5000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+    
 }
 
 class HoldThread implements Runnable {

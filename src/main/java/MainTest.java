@@ -2,14 +2,19 @@ import com.google.common.base.Joiner;
 import com.google.common.base.Stopwatch;
 import com.google.common.cache.CacheBuilder;
 import com.google.common.collect.Lists;
+import com.google.common.collect.Sets;
 import model.Model1;
 import org.apache.commons.lang3.time.StopWatch;
 import org.joda.time.DateTime;
+import org.joda.time.LocalDate;
 import org.joda.time.format.DateTimeFormat;
+import org.joda.time.format.DateTimeFormatter;
 
 import java.util.*;
 import java.util.concurrent.CopyOnWriteArrayList;
+import java.util.concurrent.SynchronousQueue;
 import java.util.concurrent.TimeUnit;
+import java.util.stream.Collectors;
 
 /**
  * @author liuxiaokang
@@ -100,10 +105,17 @@ public class MainTest {
         //     list.add(3);
         // }
         // System.out.println(list);
-        Stopwatch stopwatch = Stopwatch.createStarted();
-        Thread.sleep(220);
-        // System.out.println(stopwatch.elapsed(TimeUnit.MILLISECONDS));
-        System.out.println(TimeUnit.MILLISECONDS.toString());
+        // HashSet<Integer> set1 = Sets.newHashSet(1, 2, 3);
+        // HashSet<Integer> set2 = Sets.newHashSet(2, 4, 6);
+        // Sets.SetView<Integer> intersection = Sets.intersection(set1, set2);
+        // // intersection
+        // Set<Integer> collect = new HashSet<>(intersection);
+        // System.out.println(intersection);
+        // String s = LocalDate.now().toString(DateTimeFormat.forPattern("MM/dd"));
+        Date date = LocalDate.now().toDate();
+        System.out.println(     org.joda.time.LocalDate.now().toDate()
+
+        );
     
     }
     public static List<Integer> splitToDateList(int startDate, int endDate) {

@@ -1,9 +1,7 @@
 package design.bridge;
 
-import design.bridge.msgsender.TelephoneMsgSender;
 import design.bridge.notification.Notification;
 import design.bridge.notification.NotificationFactory;
-import design.bridge.notification.SevereNotification;
 
 import java.util.List;
 

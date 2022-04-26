@@ -26,10 +26,15 @@ public class CountDownLatchDemo {
         for (int i = 1; i <= 6; i++) {
             new Thread(() -> {
                 System.out.println(Thread.currentThread().getName()+"\t被灭");
+                try {
+                    Thread.sleep(10000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
                 countDownLatch.countDown();
             }, CountryEnum.forEach_CountryEnum(i).getRetMessage()).start();
         }
-        countDownLatch.await();
+        countDownLatch.await(1,TimeUnit.SECONDS);
         System.out.println(Thread.currentThread().getName()+"\t=====秦统一");
     }
 }

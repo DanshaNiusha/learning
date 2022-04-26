@@ -20,10 +20,14 @@ public class OptionalTest {
     public void test01() throws Exception{
         // User user1 = User.builder().id(1L).name("zhangsan").build();
         User user = null;
-        String username = Optional.ofNullable(user).map(u -> u.getName()).orElse("dsadas");
-        System.out.println(username);
-        // Object o = new ArrayList<>().stream().findFirst().orElse(null);
+        Integer x= null;
+        // String username = Optional.ofNullable(x).filter(item->).orElse(0).filter(item->item.getId()>0)..orElse("dsadas");
+        
+        x = x == null ? 0 : x;
     
+        x = Optional.ofNullable(x).filter(item -> item > 0).orElse(0);
+    
+        
     }
     
     

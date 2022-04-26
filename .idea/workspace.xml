@@ -4,30 +4,50 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e11cfef8-d2e1-4298-92de-76e5c2d4ff4a" name="Default Changelist" comment="多维度桥接模式+工厂">
-      <change afterPath="$PROJECT_DIR$/src/main/java/design/observer/ObserverTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/design/observer/RegNotificationObserver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/design/observer/RegPromotionObserver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/design/observer/UserController.java" afterDir="false" />
+    <list default="true" id="e11cfef8-d2e1-4298-92de-76e5c2d4ff4a" name="Default Changelist" comment="forkjoin">
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithms/array/DoublePoint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithms/sort/MergePeiord.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jdk/type/TypeDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/Model4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/Model5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/ParentModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/Peiord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jdk/guava/GuavaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jdk/guava/GuavaTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/algorithms/search/BinarySearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/algorithms/search/BinarySearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cc.groovey" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/datastructures/queue/ArrayQueueDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/datastructures/queue/ArrayQueueDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/design/bridge/DesignTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/design/bridge/DesignTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/design/bridge/notification/SevereNotification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/design/bridge/notification/SevereNotification.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/design/strategy/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/design/strategy/OrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jdk/stream/OptionalTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jdk/stream/OptionalTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/juc/thread/concurrency/CompletableFutureDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/juc/thread/concurrency/CompletableFutureDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/juc/thread/concurrency/CountDownLatchDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/juc/thread/concurrency/CountDownLatchDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/juc/thread/thread/DeadLockDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/juc/thread/thread/DeadLockDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Model1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Model1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Model2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Model2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Model3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Model3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/ModelMapStruct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/ModelMapStruct.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/ProductIdUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/ProductIdUtils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="TypeScript File" />
         <option value="Kotlin Script" />
+        <option value="Interface" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
-  </component>
-  <component name="FindBugs-IDEA-Workspace">
-    <toolWindowEditorPreview>false</toolWindowEditorPreview>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -48,17 +68,21 @@
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
   <component name="ProjectId" id="1ujz9SBq0ZD5oHhSm7zW0AdT54f" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/juc/thread/concurrency" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
@@ -69,32 +93,26 @@
     <option name="showRenderedDocs" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="design.factory.parser" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java" />
       <recent name="$PROJECT_DIR$/src/main/java/juc/thread/concurrency" />
       <recent name="$PROJECT_DIR$" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="design.observer" />
-      <recent name="design.bridge.notification" />
+      <recent name="design.bridge.msgsender" />
       <recent name="model" />
-      <recent name="jdk.stream" />
-      <recent name="utils" />
+      <recent name="juc.thread.concurrency" />
+      <recent name="design.statemachine" />
+      <recent name="design.template" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.GuavaTest">
-    <configuration name="GuavaTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="jdk.guava.GuavaTest" />
-      <module name="learning" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="jdk.guava.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.MainTest">
     <configuration name="MainTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MainTest" />
       <module name="learning" />
@@ -102,12 +120,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ObserverTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="design.observer.ObserverTest" />
+    <configuration name="ProductIdUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="utils.ProductIdUtils" />
       <module name="learning" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="design.observer.*" />
+          <option name="PATTERN" value="utils.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -115,67 +133,107 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
+    <configuration name="CompletableFutureDemo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="learning" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="juc.thread.concurrency.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="juc.thread.concurrency" />
+      <option name="MAIN_CLASS_NAME" value="juc.thread.concurrency.CompletableFutureDemo" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JodaTest.testPeriod" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CompletableFutureDemo.testJoin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="learning" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="jdk.localdate.joda.*" />
+          <option name="PATTERN" value="juc.thread.concurrency.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="jdk.localdate.joda" />
-      <option name="MAIN_CLASS_NAME" value="jdk.localdate.joda.JodaTest" />
-      <option name="METHOD_NAME" value="testPeriod" />
+      <option name="PACKAGE_NAME" value="juc.thread.concurrency" />
+      <option name="MAIN_CLASS_NAME" value="juc.thread.concurrency.CompletableFutureDemo" />
+      <option name="METHOD_NAME" value="testJoin" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JodaTest.testProperty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="OptionalTest.test01" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="learning" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="jdk.localdate.joda.*" />
+          <option name="PATTERN" value="jdk.stream.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="jdk.localdate.joda" />
-      <option name="MAIN_CLASS_NAME" value="jdk.localdate.joda.JodaTest" />
-      <option name="METHOD_NAME" value="testProperty" />
+      <option name="PACKAGE_NAME" value="jdk.stream" />
+      <option name="MAIN_CLASS_NAME" value="jdk.stream.OptionalTest" />
+      <option name="METHOD_NAME" value="test01" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration default="true" type="JetRunConfigurationType">
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <module name="" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
       <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <module name="" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.GuavaTest" />
-        <item itemvalue="Application.ObserverTest" />
         <item itemvalue="Application.MainTest" />
-        <item itemvalue="JUnit.JodaTest.testPeriod" />
-        <item itemvalue="JUnit.JodaTest.testProperty" />
+        <item itemvalue="JUnit.OptionalTest.test01" />
+        <item itemvalue="JUnit.CompletableFutureDemo.testJoin" />
+        <item itemvalue="JUnit.CompletableFutureDemo" />
+        <item itemvalue="Application.ProductIdUtils" />
       </list>
     </recent_temporary>
   </component>
@@ -285,7 +343,58 @@
       <workItem from="1643164260395" duration="630000" />
       <workItem from="1643169285315" duration="6025000" />
       <workItem from="1643253954103" duration="734000" />
-      <workItem from="1643353064731" duration="2506000" />
+      <workItem from="1643353064731" duration="12149000" />
+      <workItem from="1643439882309" duration="4118000" />
+      <workItem from="1644200886786" duration="1000" />
+      <workItem from="1644205326538" duration="4527000" />
+      <workItem from="1644806217847" duration="619000" />
+      <workItem from="1644892234391" duration="381000" />
+      <workItem from="1644993867186" duration="1110000" />
+      <workItem from="1645080953156" duration="4452000" />
+      <workItem from="1645151960727" duration="2481000" />
+      <workItem from="1645174644652" duration="73000" />
+      <workItem from="1645513817506" duration="1140000" />
+      <workItem from="1645615342878" duration="190000" />
+      <workItem from="1645781231476" duration="2812000" />
+      <workItem from="1646116163914" duration="2811000" />
+      <workItem from="1646275212373" duration="2000" />
+      <workItem from="1646275457834" duration="219000" />
+      <workItem from="1646275691505" duration="9825000" />
+      <workItem from="1646878656217" duration="5074000" />
+      <workItem from="1646894425681" duration="572000" />
+      <workItem from="1646896652732" duration="50000" />
+      <workItem from="1646896818752" duration="946000" />
+      <workItem from="1646905040803" duration="73000" />
+      <workItem from="1646968389539" duration="7858000" />
+      <workItem from="1647225256773" duration="1012000" />
+      <workItem from="1647250026234" duration="2000" />
+      <workItem from="1647250041263" duration="4647000" />
+      <workItem from="1647310798399" duration="366000" />
+      <workItem from="1647402881986" duration="910000" />
+      <workItem from="1647488949450" duration="5790000" />
+      <workItem from="1647501136235" duration="5882000" />
+      <workItem from="1647516938084" duration="7000" />
+      <workItem from="1647576293944" duration="2760000" />
+      <workItem from="1647916355908" duration="1797000" />
+      <workItem from="1648022264881" duration="2340000" />
+      <workItem from="1648123110636" duration="2456000" />
+      <workItem from="1648200152926" duration="656000" />
+      <workItem from="1648455099709" duration="6284000" />
+      <workItem from="1648524278468" duration="742000" />
+      <workItem from="1648526695158" duration="561000" />
+      <workItem from="1648789608414" duration="4411000" />
+      <workItem from="1649214557579" duration="839000" />
+      <workItem from="1649233636905" duration="851000" />
+      <workItem from="1649647946904" duration="416000" />
+      <workItem from="1649758624902" duration="280000" />
+      <workItem from="1649831152903" duration="3273000" />
+      <workItem from="1649908689159" duration="1237000" />
+      <workItem from="1650273299700" duration="26000" />
+      <workItem from="1650605616372" duration="1050000" />
+      <workItem from="1650621263154" duration="10000" />
+      <workItem from="1650770208945" duration="654000" />
+      <workItem from="1650870210297" duration="1370000" />
+      <workItem from="1650944073353" duration="1300000" />
     </task>
     <task id="LOCAL-00001" summary="dsa">
       <created>1627367050746</created>
@@ -378,7 +487,42 @@
       <option name="project" value="LOCAL" />
       <updated>1643180369039</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="多维度桥接模式+工厂">
+      <created>1643364524604</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1643364524604</updated>
+    </task>
+    <task id="LOCAL-00015" summary="多维度桥接模式+工厂">
+      <created>1644219332983</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1644219332983</updated>
+    </task>
+    <task id="LOCAL-00016" summary="多维度桥接模式+工厂">
+      <created>1644221843485</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1644221843485</updated>
+    </task>
+    <task id="LOCAL-00017" summary="forkjoin">
+      <created>1645084785743</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1645084785744</updated>
+    </task>
+    <task id="LOCAL-00018" summary="forkjoin">
+      <created>1645096457486</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1645096457487</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -427,14 +571,15 @@
     <MESSAGE value="id工具" />
     <MESSAGE value="多维度桥接模式" />
     <MESSAGE value="多维度桥接模式+工厂" />
-    <option name="LAST_COMMIT_MESSAGE" value="多维度桥接模式+工厂" />
+    <MESSAGE value="forkjoin" />
+    <option name="LAST_COMMIT_MESSAGE" value="forkjoin" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/test/TreeTest.java</url>
-          <line>61</line>
+          <line>42</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -444,7 +589,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/MainTest.java</url>
-          <line>39</line>
+          <line>48</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -463,14 +608,54 @@
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/lang/reflect/Method.java</url>
-          <line>487</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/design/observer/RegPromotionObserver.java</url>
           <line>14</line>
           <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/MainTest.java</url>
+          <line>129</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Solution.java</url>
+          <line>60</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Solution.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Solution.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/utils/ProductIdUtils.java</url>
+          <line>51</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/juc/thread/concurrency/CompletableFutureDemo.java</url>
+          <line>96</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/juc/thread/concurrency/CompletableFutureDemo.java</url>
+          <line>102</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/juc/thread/concurrency/CompletableFutureDemo.java</url>
+          <line>92</line>
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/MainTest.java</url>
+          <line>115</line>
+          <option name="timeStamp" value="28" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

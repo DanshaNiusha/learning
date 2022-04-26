@@ -4,32 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e11cfef8-d2e1-4298-92de-76e5c2d4ff4a" name="Default Changelist" comment="forkjoin">
-      <change afterPath="$PROJECT_DIR$/src/main/java/algorithms/array/DoublePoint.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/algorithms/sort/MergePeiord.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/jdk/type/TypeDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/Model4.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/Model5.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/ParentModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/Peiord.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/algorithms/search/BinarySearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/algorithms/search/BinarySearch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cc.groovey" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/datastructures/queue/ArrayQueueDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/datastructures/queue/ArrayQueueDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/design/bridge/DesignTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/design/bridge/DesignTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/design/bridge/notification/SevereNotification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/design/bridge/notification/SevereNotification.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/design/strategy/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/design/strategy/OrderService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jdk/stream/OptionalTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jdk/stream/OptionalTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/juc/thread/concurrency/CompletableFutureDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/juc/thread/concurrency/CompletableFutureDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/juc/thread/concurrency/CountDownLatchDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/juc/thread/concurrency/CountDownLatchDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/juc/thread/thread/DeadLockDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/juc/thread/thread/DeadLockDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Model1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Model1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Model2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Model2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Model3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Model3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/ModelMapStruct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/ModelMapStruct.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/ProductIdUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/ProductIdUtils.java" afterDir="false" />
-    </list>
+    <list default="true" id="e11cfef8-d2e1-4298-92de-76e5c2d4ff4a" name="Default Changelist" comment="forkjoin" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -394,7 +369,7 @@
       <workItem from="1650621263154" duration="10000" />
       <workItem from="1650770208945" duration="654000" />
       <workItem from="1650870210297" duration="1370000" />
-      <workItem from="1650944073353" duration="1300000" />
+      <workItem from="1650944073353" duration="2116000" />
     </task>
     <task id="LOCAL-00001" summary="dsa">
       <created>1627367050746</created>

@@ -1,5 +1,7 @@
 package algorithms.dynamic;
 
+import org.apache.commons.lang3.StringUtils;
+
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Stream;
@@ -27,7 +29,6 @@ public class KnapasckProblem {
     
     
     public static void main(String[] args) {
-        
         // 物品的重量
         int[] w = {1, 4, 3};
         // 物品的价值

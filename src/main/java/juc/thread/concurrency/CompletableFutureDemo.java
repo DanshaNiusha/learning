@@ -86,15 +86,16 @@ public class CompletableFutureDemo {
     public void testJoin() throws ExecutionException, InterruptedException {
         List<CompletableFuture<Integer>> futureList = Lists.newArrayList();
         try {
-            for (int i = 0; i < 5; i++) {
+            for (int i = 0; i < 3; i++) {
                 int finalI = i;
                 futureList.add(CompletableFuture.supplyAsync(() -> addNum(finalI, 1), executor)
-                        .whenComplete((result, e) -> { // 这里是执行完后的附加操作,可以不要,因为addNUm的结果已经在Future中了,可以get
-                            System.out.println(result);
+                        .whenComplete((result, e) -> {
+                            // 这里的e是addnum中的e.addnum没e则e是null
+                            System.out.println("complate e:" + e.getMessage());
                         })
                         .exceptionally(e -> {
-                            // 这里捕获的是whencomplate中的异常 不是addNum的异常,addNUm异常会被外层捕获
-                            System.out.println("inner eeee"+e.getMessage());
+                            // 这里如果whencomplate中的的e!=null,则e就是上面的e,如果上面e==null,则这里的e是whencomlete流程的异常 没e则不执行
+                            System.out.println("exceptionally e:" + e.getMessage());
                             return -1;
                         })
                 );
@@ -111,13 +112,13 @@ public class CompletableFutureDemo {
         System.out.println("done");
         
         // 这里get已经不会阻塞了 因为上面已经allof.join了
-        futureList.forEach(num-> {
-            try {
-                System.out.println(num.get());
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-        });
+        // futureList.forEach(num-> {
+        //     try {
+        //         System.out.println(num.get());
+        //     } catch (Exception e) {
+        //         e.printStackTrace();
+        //     }
+        // });
     }
     
     public int addNum(int a, int b) {

@@ -45,26 +45,9 @@ public class MainTest {
             , 1, TimeUnit.SECONDS, new SynchronousQueue<>(), new ThreadPoolExecutor.CallerRunsPolicy());
     
     public static void main(String[] args) throws InterruptedException, NoSuchAlgorithmException {
-        // for (int i = 0; i < 10; i++) {
-        //     executor.execute(() -> {
-        //         int n = 1 / 0;
-        //     });
-        //
-        // }
-        int i = 123;
-        Long l = 123L;
-        System.out.println(Objects.equals(i,l));
-        
-        
+    
     }
     
-    private static class ContainerMonitor extends TimerTask {
-        @Override
-        public void run() {
-            Map<String, String> tags = Maps.newHashMapWithExpectedSize(2);
-            System.out.println(111);
-        }
-    }
     
     
 }

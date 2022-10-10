@@ -13,6 +13,7 @@ import java.util.Arrays;
  */
 public class QuickSort {
     
+    //https://blog.csdn.net/weixin_43586713/article/details/119820797
     public static void main(String[] args) {
         // int[] arr = {3, 9, -1, 10, -2};
         int[] arr = {-9, 78, 0, 23, -567, 70};

@@ -1,6 +1,7 @@
 package algorithms.sort;
 
 import java.util.Arrays;
+import java.util.List;
 
 /**
  * 快速排序（Quicksort）是对 冒泡排序的一种改进。

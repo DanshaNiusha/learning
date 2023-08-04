@@ -86,7 +86,7 @@ public class CompletableFutureDemo {
     public void testJoin() throws ExecutionException, InterruptedException {
         List<CompletableFuture<Integer>> futureList = Lists.newArrayList();
         try {
-            for (int i = 0; i < 3; i++) {
+            for (int i = 0; i < 1; i++) {
                 int finalI = i;
                 futureList.add(CompletableFuture.supplyAsync(() -> addNum(finalI, 1), executor)
                         .whenComplete((result, e) -> {

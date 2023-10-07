@@ -9,16 +9,19 @@ import design.factory.parser.IRuleConfigParser;
  */
 public class Application {
     
-    public static void main(String[] args) {
-        String ruleConfigFileExtension = getFileExtension("../root");
-        
-        IRuleConfigParserFactory parserFactory = RuleConfigParserFactoryMap.getParserFactory(ruleConfigFileExtension);
-        IRuleConfigParser parser = parserFactory.createParser();
-        
-        String configText = "";
-        //从ruleConfigFilePath文件中读取配置文本到configText中
-        String ruleConfig = parser.parse(configText);
-        System.out.println(ruleConfig);
+    public static void main(String[] args) throws InterruptedException {
+        while (true) {
+            String ruleConfigFileExtension = getFileExtension("../root");
+            
+            IRuleConfigParserFactory parserFactory = RuleConfigParserFactoryMap.getParserFactory(ruleConfigFileExtension);
+            IRuleConfigParser parser = parserFactory.createParser();
+            
+            String configText = "";
+            //从ruleConfigFilePath文件中读取配置文本到configText中
+            String ruleConfig = parser.parse(configText);
+            System.out.println(ruleConfig);
+            Thread.sleep(5000);
+        }
     }
     
     private static String getFileExtension(String filePath) {
